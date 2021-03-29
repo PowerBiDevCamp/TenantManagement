@@ -1,0 +1,38 @@
+@model TenantManagement.Controllers.HomeController.CreateAppIdentityModel
+
+<h2 id="page-title">Create New App Identity</h2>
+
+<form id="new-app-identity" method="post" class="form-horizontal">
+  <fieldset>
+    <div class="form-group row">
+      <label for="AppIdentityName" class="col-sm-2 col-form-label">App Identity Name</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="AppIdentityName" name="AppIdentityName" placeholder="Enter app identity name" value="@Model.AppIdentityName">
+      </div>
+    </div>
+    <div class="form-group row button-row">
+      <button id="create-app-identity-button" type="submit" class="btn btn-primary">
+        <i class="fa fa-android"></i>
+        Add New App Identity to Pool
+      </button>
+    </div>
+  </fieldset>
+</form>
+
+<div class="loading" style="display:none;">
+  <div class="loading-image">
+    <img src="~/images/loading.gif" />
+  </div>
+</div>
+
+@section Scripts {
+  <script type="text/javascript">
+    $(function () {
+      $("#new-app-identity").submit(function () {
+        $("#new-app-identity").hide();
+        $("#page-title").text("Creating New App Identity...");
+        $(".loading").show(100);
+      });
+    });
+  </script>
+}

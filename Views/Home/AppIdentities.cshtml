@@ -1,0 +1,35 @@
+@model IList<TenantManagement.Models.PowerBiAppIdentity>
+
+<h2>App Identities</h2>
+
+<div class="toolbar">
+  <a id="create-app-identity-button" class="btn btn-primary" asp-action="CreateAppIdentity">
+    <i class="fa fa-android"></i>
+    Add New App Identity to Pool
+  </a>
+</div>
+
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Display Name</th>
+      <th>Application ID</th>
+      <th>Service Principal ID</th>
+      <th>Tenants</th>
+      <th>Exclusive</th>
+      <th>View</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  @foreach (var appIdentity in @Model) {
+    <tr>
+      <td>@appIdentity.Name</td>
+      <td>@appIdentity.ApplicationId</td>
+      <td>@appIdentity.ServicePrincipalId</td>
+      <td style="text-align:center">@appIdentity.Tenants.Count()</td>
+      <td style="text-align:center">@appIdentity.Exclusive.ToString()</td>
+      <td style="text-align:center"><a href="AppIdentity/?appIdentity=@appIdentity.Name" class="nav nav-link"><i class="fa fa-binoculars"></i></a></td>
+      <td style="text-align:center"><a href="DeleteAppIdentity/?applicationObjectId=@appIdentity.ApplicationObjectId" class="nav nav-link"><i class="fa fa-remove"></i></a></td>
+    </tr>
+  }
+</table>

@@ -1,0 +1,74 @@
+@model TenantManagement.Models.PowerBiAppIdentity
+
+<h2>
+  <span><a class="btn btn-sm h2-backarrow" asp-action="AppIdentities"><i class="fa fa-backward"></i></a></span>
+  <span>App Identity Details</span>
+</h2>
+
+<form class="form-horizontal" role="form">
+  <fieldset>
+    <div class="form-group row">
+      <label for="AppIdentityName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input class="form-control " id="AppIdentityName" name="AppIdentityName" readonly value="@Model.Name">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ApplicationId" class="col-sm-2 col-form-label">Application ID</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="ApplicationId" name="ApplicationId" readonly="readonly" value="@Model.ApplicationId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ServicePrincipalId" class="col-sm-2 col-form-label">Service Principal ID</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="ServicePrincipalId" name="ServicePrincipalId" readonly="readonly" value="@Model.ServicePrincipalId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ApplicationObjectId" class="col-sm-2 col-form-label">Application Object ID</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="ApplicationObjectId" name="ApplicationObjectId" readonly="readonly" value="@Model.ApplicationObjectId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="TenantId" class="col-sm-2 col-form-label">Tenant ID</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="TenantId" name="TenantId" readonly="readonly" value="@Model.TenantId">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ClientSecret" class="col-sm-2 col-form-label">Client Secret</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="ClientSecret" name="ClientSecret" readonly="readonly" value="@Model.ClientSecret">
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<h3>Tenants owned by this app identity</h3>
+
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Tenant</th>
+      <th>Workspace ID</th>
+      <th>Owner</th>
+      <th style="text-align:center;">Embed</th>
+      <th style="text-align:center;">Web URL</th>
+      <th style="text-align:center;">View</th>
+      <th style="text-align:center;">Delete</th>
+    </tr>
+  </thead>
+  @foreach (var tenant in Model.Tenants) {
+    <tr>
+      <td>@tenant.Name</td>
+      <td>@tenant.WorkspaceId</td>
+      <td>@tenant.Owner</td>
+      <td style="text-align:center"><a href="~/Home/Embed/?AppIdentity=@tenant.Owner&Tenant=@tenant.Name" class="nav nav-link" target="_blank"><i class="fa fa-bar-chart"></a></td>
+      <td style="text-align:center"><a href="@tenant.WorkspaceUrl" class="nav nav-link" target="_blank"><i class="fa fa-line-chart"></a></td>
+      <td style="text-align:center"><a href="Tenant/?Name=@tenant.Name" class="nav nav-link"><i class="fa fa-search"></i></a></td>
+      <td style="text-align:center"><a href="DeleteTenant/?TenantName=@tenant.Name" class="nav nav-link"><i class="fa fa-remove"></i></a></td>
+    </tr>
+  }
+</table>

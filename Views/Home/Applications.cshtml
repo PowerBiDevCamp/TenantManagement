@@ -1,0 +1,25 @@
+@model IList<Microsoft.Graph.Application>
+
+
+<h2>Azure AD Applications</h2>
+
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Display Name</th>
+      <th>Application ID</th>
+      <th>Created</th>
+      <th>Application Type</th>
+      <th>Implicit Flow</th>
+    </tr>
+  </thead>
+  @foreach (var application in @Model) {
+    <tr>
+      <td>@application.DisplayName</td>
+      <td>@application.AppId</td>
+      <td>@application.CreatedDateTime.Value.ToString("g")</td>
+      <td>@( (application.IsFallbackPublicClient.HasValue && application.IsFallbackPublicClient.Value) ? "Public" : "Confidential" )</td>
+      <td>@( application.Web.ImplicitGrantSettings.EnableAccessTokenIssuance)</td>
+    </tr>
+  }
+</table>
