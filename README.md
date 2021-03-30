@@ -4,15 +4,29 @@ The
 [TenantManagement](https://github.com/PowerBiDevCamp/TenantManagement/tree/main/TenantManagement)
 application is a sample .NET 5 application which demonstrates how to
 manage service principals within a large-scale Power BI embedding
-environment with 1000's of customer tenants. The problem that this
-application addresses is a Power BI Service limitation which restricts
-users and service principals from being a member of over 1000
-workspaces. If you are implementing app-owns-data embedding in an
-application which uses a single service principal, Microsoft will only
-support you in creating up to 1000 workspaces.
+environment with 1000's of customer tenants. Let's start by explaining
+what is meant by a tenant.
+
+If you have worked with Azure AD, the word **"tenant"** might make you
+think of an Azure AD tenant. However, the concept of a tenant is
+different for this sample application. In this context, each tenant
+represents a customer for which you are embedding Power BI reports using
+the app-owns-data embedding model. In order to manage a multi-tenant
+environment, you must create a separate tenant for each customer.
+Provisioning a new customer tenant for Power BI embedding typically
+involves writing code to create a Power BI workspace, import a PBIX
+file, patch datasource credentials and start a dataset refresh
+operation.
+
+The problem that **TenantManagement** application addresses is a Power
+BI Service limitation which restricts users and service principals from
+being a member of more than 1000 workspaces. If you are implementing
+app-owns-data embedding in an application which uses a single service
+principal, Microsoft will only support you in creating up to 1000
+workspaces.
 
 The **TenantManagement** application demonstrates how to work around the
-1000 workspace limiation by implementing a service principal pooling
+1000 workspace limitation by implementing a service principal pooling
 scheme. Here is how it works. Each service principal can support up to
 1000 workspaces. Therefore, creating a service principal pool of 10
 service principals makes it possible to create and manage 10,000
@@ -117,11 +131,10 @@ in the **Power BI Apps** group will be able to create new workspaces.
 <img src="Images\ReadMe\media\image10.png" style="width:6.49097in;height:3.27014in" />
 
 In the **Workspace settings** section, set the **Apply to** setting to
-**Specific security groups** and add **Power BI Apps** security group as
-shown in the screenshot below. Click the **Apply** button to save your
+**The entire organization**. Click the **Apply** button to save your
 configuration changes.
 
-<img src="Images\ReadMe\media\image11.png" style="width:6.49097in;height:4.00625in" />
+<img src="Images\ReadMe\media\image11.png" style="width:6.49097in;height:3.84028in" />
 
 You have now completed the configuration of Power BI tenant-level
 settings.
