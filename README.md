@@ -9,22 +9,22 @@ application addresses is a Power BI Service limitation which restricts
 users and service principals from being a member of over 1000
 workspaces. If you are implementing app-owns-data embedding in an
 application which uses a single service principal, Microsoft will only
-support you in creating up to 1000 workspace.
+support you in creating up to 1000 workspaces.
 
 The **TenantManagement** application demonstrates how to work around the
 1000 workspace limiation by implementing a service principal pooling
 scheme. Here is how it works. Each service principal can support up to
-1000 workspace. Therefore, creating a service principal pool of 10
+1000 workspaces. Therefore, creating a service principal pool of 10
 service principals makes it possible to create and manage 10,000
 customer tenant workspaces in a fashion that is supported by Microsoft.
 
 In addition to implementing a service principal pooling scheme, the
 **TenantManagement** application also demonstrates how to create and
 manage a separate service principal for each customer tenant workspace.
-An application design which creates service principals so that there is
-a one-to-one relationship service principals and customer tenant
-workspaces is what Microsoft recommends because it provides the greatest
-amount of isolation especially with respect datasource credentials.
+An application design which maintains a one-to-one relationship between
+service principals and customer tenant workspaces is what Microsoft
+recommends because it provides the greatest amount of isolation
+especially with respect datasource credentials.
 
 You can follow the steps in this document to set up the
 **TenantManagement** application for testing. To complete these steps,
