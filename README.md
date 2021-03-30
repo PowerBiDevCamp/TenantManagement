@@ -23,8 +23,8 @@ In addition to implementing a service principal pooling scheme, the
 manage a separate service principal for each customer tenant workspace.
 An application design which maintains a one-to-one relationship between
 service principals and customer tenant workspaces is what Microsoft
-recommends because it provides the greatest amount of isolation
-especially with respect datasource credentials.
+recommends as a best practice because it provides the greatest amount of
+isolation especially with respect datasource credentials.
 
 You can follow the steps in this document to set up the
 **TenantManagement** application for testing. To complete these steps,
