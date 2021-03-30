@@ -12,11 +12,11 @@ https://portal.azure.com/\#blade/Microsoft\_AAD\_IAM/GroupsManagementMenuBlade/A
 
 x
 
-<img src="Images\ReadMe\media\image1.png" style="width:6.5in;height:2.05764in" alt="Graphical user interface, text, application Description automatically generated" />
+<img src="Images\ReadMe\media\image1.png" style="width:6.5in;height:2.16667in" />
 
 Xxxx
 
-<img src="Images\ReadMe\media\image2.png" style="width:6.5in;height:3.71458in" alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="Images\ReadMe\media\image2.png" style="width:6.5in;height:3.01667in" />
 
 X
 
