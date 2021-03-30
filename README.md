@@ -12,7 +12,7 @@ free by following the steps in [Create a Development Environment for
 Power BI
 Embedding](https://github.com/PowerBiDevCamp/Camp-Sessions/raw/master/Create%20Power%20BI%20Development%20Environment.pdf).
 
-## Setting Up the Application for Testing
+## Setting up your development environment
 
 To set up the TenantManagement application doe testing, you will need to
 configure a Microsoft 365 envviroment with the following tasks.
@@ -27,7 +27,7 @@ configure a Microsoft 365 envviroment with the following tasks.
 The following three sections will step through each of these setup
 tasks.
 
-### Create a Security Group in Azure AD named Power BI Apps
+### Create an Azure AD security group named Power BI Apps
 
 Begin by navigating to the [Groups management
 page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)
@@ -47,7 +47,7 @@ on the Azure portal **Groups** page.
 
 <img src="Images\ReadMe\media\image3.png" style="width:6.49722in;height:1.89583in" />
 
-### Configure Power BI Tenant-Level Settings for Service Principal Access
+### Configure Power BI tenant-level settings for service principal access
 
 Next, you need you enable a tenant-level setting for Power BI named
 **Allow service principals to use Power BI APIs**. Navigate to the Power
@@ -177,7 +177,27 @@ Paste the **Client Secret** into the same text document with the
 
 <img src="Images\ReadMe\media\image22.png" style="width:6.49722in;height:3.22708in" />
 
-## More
+## Setting Up the Tenant Management Application for Testing
+
+xxxx
+
+### Download the Source Code
+
+xxxx
+
+### Open the Project in Visual Studio 2019
+
+Xxxxx
+
+### Update application settings in the appsettings.json file
+
+ssss
+
+### Create the TenantManagementDB database
+
+Xxxxx
+
+## Test the Tenant Management Application
 
 Xxxx
 
