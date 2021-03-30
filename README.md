@@ -96,7 +96,7 @@ Xx
 
 Xx
 
-<img src="Images\ReadMe\media\image16.png" style="width:6.30069in;height:1.80972in" />
+<img src="Images\ReadMe\media\image16.png" style="width:6.27639in;height:1.77292in" />
 
 <img src="Images\ReadMe\media\image17.png" style="width:6.12292in;height:2.50903in" />
 
