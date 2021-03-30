@@ -1,10 +1,9 @@
 # The Tenant Management Application
 
-Follow the steps in this document to create a new Azure AD application
-for the
+You can follow the steps in this document to set up the
 [TenantManagement](https://github.com/PowerBiDevCamp/TenantManagement/tree/main/TenantManagement)
-sample project. To complete these steps, you will require a Microsoft
-365 tenant in which you have permissions to create and manage Azure AD
+for testing. To complete these steps, you will require a Microsoft 365
+tenant in which you have permissions to create and manage Azure AD
 applications and security groups. You will also need Power BI Service
 administrator permissions to configure Power BI settings to give service
 principals to ability to access the Power BI Service API. If you do not
@@ -13,7 +12,22 @@ free by following the steps in [Create a Development Environment for
 Power BI
 Embedding](https://github.com/PowerBiDevCamp/Camp-Sessions/raw/master/Create%20Power%20BI%20Development%20Environment.pdf).
 
-## Create the Azure AD Group named Power BI Apps
+## Setting Up the Application for Testing
+
+To set up the TenantManagement application doe testing, you will need to
+configure a Microsoft 365 envviroment with the following tasks.
+
+1.  Create a Security Group in Azure AD named Power BI Apps
+
+2.  Configure Power BI Tenant-Level Settings for Service Principal
+    Access
+
+3.  Create the Azure AD Application for the TenantManagement Application
+
+The following three sections will step through each of these setup
+tasks.
+
+### Create a Security Group in Azure AD named Power BI Apps
 
 Begin by navigating to the [Groups management
 page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)
@@ -28,7 +42,7 @@ Xxxx
 
 X
 
-## Configure Power BI Tenant Level Settings for Service Principal Access
+### Configure Power BI Tenant-Level Settings for Service Principal Access
 
 Xxx
 
@@ -70,7 +84,7 @@ X
 
 X
 
-## Create the Azure AD Application for the TenantManagement Application
+### Create the Azure AD Application for the TenantManagement Application
 
 When you login to the Azure portal to create the new Azure AD
 application, make sure you log in using a user account in the same
