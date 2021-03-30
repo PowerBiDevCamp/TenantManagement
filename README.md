@@ -40,7 +40,7 @@ X
 
 X
 
-<img src="Images\ReadMe\media\image6.png" style="width:6.5in;height:4.28542in" alt="Graphical user interface, text, application Description automatically generated" />
+<img src="Images\ReadMe\media\image6.png" style="width:6.5in;height:4.28333in" />
 
 X
 
@@ -50,15 +50,15 @@ x
 
 X
 
-<img src="Images\ReadMe\media\image8.png" style="width:6.5in;height:3.16875in" alt="Graphical user interface, application Description automatically generated" />
+<img src="Images\ReadMe\media\image8.png" style="width:6.49722in;height:3.25139in" />
 
 X
 
-<img src="Images\ReadMe\media\image9.png" style="width:6.5in;height:3.20347in" alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="Images\ReadMe\media\image9.png" style="width:6.49097in;height:3.27014in" />
 
 X
 
-<img src="Images\ReadMe\media\image10.png" style="width:5.42088in;height:2.92473in" alt="Graphical user interface, application Description automatically generated" />
+<img src="Images\ReadMe\media\image10.png" style="width:6.49097in;height:4.00625in" />
 
 X
 
@@ -70,11 +70,11 @@ https://portal.azure.com/\#blade/Microsoft\_AAD\_IAM/ActiveDirectoryMenuBlade/Re
 
 sssss
 
-<img src="Images\ReadMe\media\image11.png" style="width:6.5in;height:1.69236in" alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="Images\ReadMe\media\image11.png" style="width:6.49722in;height:1.80972in" />
 
 Xx
 
-<img src="Images\ReadMe\media\image12.png" style="width:5.16322in;height:1.77127in" alt="Graphical user interface, text, application Description automatically generated" />
+<img src="Images\ReadMe\media\image12.png" style="width:6.49722in;height:2.28194in" />
 
 X
 
@@ -82,15 +82,15 @@ https://localhost:44300/signin-oidc
 
 xx
 
-<img src="Images\ReadMe\media\image13.png" style="width:6.5in;height:1.71319in" alt="Graphical user interface, text, application Description automatically generated" />
+<img src="Images\ReadMe\media\image13.png" style="width:6.49722in;height:1.82222in" />
 
 Xxxx
 
-<img src="Images\ReadMe\media\image14.png" style="width:6.5in;height:2.43681in" alt="Graphical user interface, text, application Description automatically generated" />
+<img src="Images\ReadMe\media\image14.png" style="width:6.49722in;height:2.55208in" />
 
 Xxxx
 
-<img src="Images\ReadMe\media\image15.png" style="width:6.5in;height:1.68472in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+<img src="Images\ReadMe\media\image15.png" style="width:6.5in;height:1.85in" />
 
 Xx
 
@@ -98,20 +98,20 @@ Xx
 
 Xx
 
-<img src="Images\ReadMe\media\image16.png" style="width:6.34375in;height:1.61458in" alt="Text Description automatically generated" />
+<img src="Images\ReadMe\media\image17.png" style="width:6.30069in;height:1.80972in" />
 
-<img src="Images\ReadMe\media\image17.png" style="width:6.15625in;height:2.42708in" alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="Images\ReadMe\media\image18.png" style="width:6.12292in;height:2.50903in" />
 
 X
 
-<img src="Images\ReadMe\media\image18.png" style="width:6.5in;height:3.45972in" alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="Images\ReadMe\media\image19.png" style="width:6.49722in;height:3.52778in" />
 
 x
 
-<img src="Images\ReadMe\media\image19.png" style="width:6.5in;height:2.83403in" alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="Images\ReadMe\media\image20.png" style="width:6.49722in;height:2.95694in" />
 
 X
 
-<img src="Images\ReadMe\media\image20.png" style="width:6.5in;height:1.68958in" alt="Graphical user interface, text, application Description automatically generated" />
+<img src="Images\ReadMe\media\image21.png" style="width:6.49097in;height:1.80347in" />
 
-<img src="Images\ReadMe\media\image21.png" style="width:5.0125in;height:2.36916in" alt="Graphical user interface, text Description automatically generated" />
+<img src="Images\ReadMe\media\image22.png" style="width:6.49722in;height:3.22708in" />
