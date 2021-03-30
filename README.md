@@ -1,15 +1,40 @@
 # The Tenant Management Application
 
-You can follow the steps in this document to set up the
+The
 [TenantManagement](https://github.com/PowerBiDevCamp/TenantManagement/tree/main/TenantManagement)
-for testing. To complete these steps, you will require a Microsoft 365
-tenant in which you have permissions to create and manage Azure AD
-applications and security groups. You will also need Power BI Service
-administrator permissions to configure Power BI settings to give service
-principals to ability to access the Power BI Service API. If you do not
-have a Microsoft 365 environment for testing, you can create one for
-free by following the steps in [Create a Development Environment for
-Power BI
+application is a sample .NET 5 application which demonstrates how to
+manage service principals within a large-scale Power BI embedding
+environment with 1000's of customer tenants. The problem that this
+application addresses is a Power BI Service limitation which restricts
+users and service principals from being a member of over 1000
+workspaces. If you are implementing app-owns-data embedding in an
+application which uses a single service principal, Microsoft will only
+support you in creating up to 1000 workspace.
+
+The **TenantManagement** application demonstrates how to work around the
+1000 workspace limiation by implementing a service principal pooling
+scheme. Here is how it works. Each service principal can support up to
+1000 workspace. Therefore, creating a service principal pool of 10
+service principals makes it possible to create and manage 10,000
+customer tenant workspaces in a fashion that is supported by Microsoft.
+
+In addition to implementing a service principal pooling scheme, the
+**TenantManagement** application also demonstrates how to create and
+manage a separate service principal for each customer tenant workspace.
+An application design which creates service principals so that there is
+a one-to-one relationship service principals and customer tenant
+workspaces is what Microsoft recommends because it provides the greatest
+amount of isolation especially with respect datasource credentials.
+
+You can follow the steps in this document to set up the
+**TenantManagement** application for testing. To complete these steps,
+you will require a Microsoft 365 tenant in which you have permissions to
+create and manage Azure AD applications and security groups. You will
+also need Power BI Service administrator permissions to configure Power
+BI settings to give service principals to ability to access the Power BI
+Service API. If you do not have a Microsoft 365 environment for testing,
+you can create one for free by following the steps in [Create a
+Development Environment for Power BI
 Embedding](https://github.com/PowerBiDevCamp/Camp-Sessions/raw/master/Create%20Power%20BI%20Development%20Environment.pdf).
 
 ## Setting up your development environment
