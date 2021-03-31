@@ -215,30 +215,116 @@ Paste the **Client Secret** into the same text document with the
 
 <img src="Images\ReadMe\media\image22.png" style="width:6.49722in;height:3.22708in" />
 
-## Setting Up the Tenant Management Application for Testing
+## Testing the Tenant Management project with Visual Studio 2019
 
-xxxx
+Here are the steps. You must install Visual Studio 2019or Visual Studio
+Code to run this sample, You can use either of these although this
+document will cover the details of getting the project running with
+Visual Studio 2019. You will have to figure itu out on your own if you
+are using Visual Studio Code.
 
 ### Download the Source Code
 
-xxxx
+The source code for the **TenantManagement** project is maintained in a
+GitHib repository at the following URL.
+
+-   <https://github.com/PowerBiDevCamp/TenantManagement>
+
+You can download the project source files as a ZIP archive using [this
+link](https://github.com/PowerBiDevCamp/TenantManagement/archive/refs/heads/main.zip).
+If you are familiar with the **git** utility, you can clone the project
+source files to your local computer using the following **git** command.
+
+git clone <https://github.com/PowerBiDevCamp/TenantManagement.git>
+
+Once you have downloaded the source files for the **TenantManagement**
+repository to your local computer, you will see there is a top-level
+folder named **TenantManagement** which contains several files including
+a Visual Studio solution file named **TenantManagement.sln**.
+
+<img src="Images\ReadMe\media\image23.png" style="width:6.10526in;height:3.52618in" alt="Graphical user interface, application Description automatically generated" />
 
 ### Open the Project in Visual Studio 2019
 
 Xxxxx
 
+<img src="Images\ReadMe\media\image24.png" style="width:3.45625in;height:4.24583in" />
+
+zzz
+
 ### Update application settings in the appsettings.json file
 
-ssss
+Ssss
+
+<img src="Images\ReadMe\media\image25.png" style="width:6.5in;height:1.96667in" />
+
+Xxx
+
+<img src="Images\ReadMe\media\image26.png" style="width:5.27639in;height:2.00625in" />
+
+This is the database connection string.
+
+"Server=(localdb)\\\\MSSQLLocalDB;Database=TenantManagementDB;Integrated
+Security=True"
+
+X
+
+<img src="Images\ReadMe\media\image27.png" style="width:5.24514in;height:1.70556in" />
+
+x
 
 ### Create the TenantManagementDB database
 
-Xxxxx
+Xxxx
+
+<img src="Images\ReadMe\media\image28.png" style="width:6.49097in;height:3.14722in" />
+
+X
+
+<img src="Images\ReadMe\media\image29.png" style="width:4.05521in;height:1.24168in" />
+
+Z
+
+<img src="Images\ReadMe\media\image30.png" style="width:3.34969in;height:1.61769in" />
+
+Zz
+
+Add-Migration InitialCreate
+
+xxx
+
+<img src="Images\ReadMe\media\image31.png" style="width:6.49722in;height:1.44792in" />
+
+Ssss
+
+<img src="Images\ReadMe\media\image32.png" style="width:4.65in;height:2.53958in" />
+
+Ss
+
+Update-Database
+
+Xx
+
+<img src="Images\ReadMe\media\image33.png" style="width:4.72393in;height:1.38428in" />
+
+Xxx
+
+<img src="Images\ReadMe\media\image34.png" style="width:3.1411in;height:1.66017in" />
+
+Xxx
+
+<img src="Images\ReadMe\media\image35.png" style="width:4.78542in;height:2.20833in" />
+
+Xx
+
+<img src="Images\ReadMe\media\image36.png" style="width:2.73611in;height:1.675in" />
+
+xxx
 
 ## Test the Tenant Management Application
 
 Xxxx
 
-<img src="Images\ReadMe\media\image23.png" style="width:6.49722in;height:2.25764in" />
+<img src="Images\ReadMe\media\image37.png" style="width:6.49722in;height:2.25764in" />
 
-<img src="Images\ReadMe\media\image24.png" style="width:3.79722in;height:5.325in" />
+<img src="Images\ReadMe\media\image38.png" style="width:3.79722in;height:5.325in" />
