@@ -430,7 +430,7 @@ the following dialog asking you to accept the delegated permission
 request that the application has made for the Microsoft Graph API. Click
 the **Accept** button to grant these permissions and continue.
 
-<img src="Images\ReadMe\media\image44.png" width=250 />
+<img src="Images\ReadMe\media\image44.png" width=300 />
 
 Once you have logged in, you should see your name in the welcome
 message.
