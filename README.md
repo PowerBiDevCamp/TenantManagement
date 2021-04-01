@@ -397,17 +397,17 @@ the database that has just been created. Open the **SQL Server Object
 Explorer** by invoking the **View &gt;** **SQL Server Object Explorer**
 menu command.
 
-<img src="Images\ReadMe\media\image39.png" width=600 />
+<img src="Images\ReadMe\media\image39.png" width=500 />
 
 Expand the **Databases** node for the server you are using and verify
 you an see the new database named **TenantManagementDB**.
 
-<img src="Images\ReadMe\media\image40.png" style="width:4.78542in;height:2.20833in" />
+<img src="Images\ReadMe\media\image40.png" width=500 />
 
 If you expand the **Tables** node for **TenantManagementDB**, you should
 see the two tables named **AppIdentities** and **Tenants**.
 
-<img src="Images\ReadMe\media\image41.png" style="width:2.73611in;height:1.675in" />
+<img src="Images\ReadMe\media\image41.png" width=500 />
 
 The **TenantManagementDB** database has now been set up and you are
 ready to run the application in the Visual Studio debugger.
