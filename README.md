@@ -347,8 +347,8 @@ the source file named **TenantManagementDB.cs** without saving any
 changes. The next step is to run the PowerShell commands to create the
 project database named **TenantManagementDB**. 
 
-Open the Package Manager console using the **Tools &gt; NuGet Package Manager &gt; Package
-Manager Console** command.
+Open the Package Manager console using **Tools &gt; NuGet Package Manager &gt; Package
+Manager Console**.
 
 <img src="Images\ReadMe\media\image34.png" width=100% />
 
