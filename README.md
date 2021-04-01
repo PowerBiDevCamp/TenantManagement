@@ -613,7 +613,7 @@ created.
 
 <img src="Images\ReadMe\media\image69.png" width=100% />
 
-Inspect the Power BI Workspaces
+### Inspect the Power BI Workspaces
 
 If you're curious about what's been created in Power BI, you should be
 able to go to the Power BI Service and examine the workspaces. Navigate
