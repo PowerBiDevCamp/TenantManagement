@@ -485,7 +485,7 @@ application as a group member. This is important because these service
 principals must be added to this group in order to call the Power BI
 REST API.
 
-<img src="Images\ReadMe\media\image52.png" width=100% />
+<img src="Images\ReadMe\media\image52.png" width=600 />
 
 In addition to communicating with Azure AD to create and configure Azure
 AD application, the **TenantManagement** application also captures
