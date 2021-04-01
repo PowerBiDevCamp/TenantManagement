@@ -397,7 +397,7 @@ the database that has just been created. Open the **SQL Server Object
 Explorer** by invoking the **View &gt;** **SQL Server Object Explorer**
 menu command.
 
-<img src="Images\ReadMe\media\image39.png" width=500 />
+<img src="Images\ReadMe\media\image39.png" width=400 />
 
 Expand the **Databases** node for the server you are using and verify
 you an see the new database named **TenantManagementDB**.
@@ -418,19 +418,19 @@ Launch the **TenantManagement** web application in the Visual Studio
 debugger by pressing the **{F5}** key or clicking the Visual Studio
 **Play** button with the green arrow and the caption of **IIS Express**.
 
-<img src="Images\ReadMe\media\image42.png" style="width:6.49097in;height:1.61319in" />
+<img src="Images\ReadMe\media\image42.png" width=100% />
 
 When the application starts, click the **Sign in** link in the upper
 right corner to begin the user login sequence.
 
-<img src="Images\ReadMe\media\image43.png" style="width:6.49722in;height:2.25764in" />
+<img src="Images\ReadMe\media\image43.png" width=100% />
 
 The first time you authenticate with Azure AD, you'll be prompted with
 the following dialog asking you to accept the delegated permission
 request that the application has made for the Microsoft Graph API. Click
 the **Accept** button to grant these permissions and continue.
 
-<img src="Images\ReadMe\media\image44.png" style="width:2.44552in;height:3.42945in" />
+<img src="Images\ReadMe\media\image44.png" width=400 />
 
 Once you have logged in, you should see your name in the welcome
 message.
