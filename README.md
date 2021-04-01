@@ -476,7 +476,7 @@ created for each app identity you've created.
 
 If you return to the
 [Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)
-page in the Azure portal and drill into the Members page of the **Power
+page in the Azure portal and drill into the **Members** page of the **Power
 BI Apps** security group, you will see that the **TenantManagement**
 application has also added the service principal for each azure AD
 application as a group member. This is important because these service
