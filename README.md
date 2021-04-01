@@ -591,7 +591,7 @@ app identity was used to create the customer tenant. The service principal
 that is configured as the **Owner** of a tenant will be the only service principal 
 who will have access to access the target workspace in Power BI. 
 
-Move to the **Power BI Tenants** page and click on the **Embed** button for a customer tenant.
+Move to the **Power BI Tenants** page and click on the **Embed** button for the first customer tenant.
 
 <img src="Images\ReadMe\media\image66.png" width=100% />
 
