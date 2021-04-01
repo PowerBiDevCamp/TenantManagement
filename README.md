@@ -51,10 +51,10 @@ you can create one for free by following the steps in [Create a
 Development Environment for Power BI
 Embedding](https://github.com/PowerBiDevCamp/Camp-Sessions/raw/master/Create%20Power%20BI%20Development%20Environment.pdf).
 
-## Setting up your development environment
+## Set up your development environment
 
 To set up the **TenantManagement** application for testing, you will need to
-configure a Microsoft 365 envviroment by completing the following tasks.
+configure a Microsoft 365 environment by completing the following tasks.
 
 1.  Create an Azure AD security group named **Power BI Apps**
 2.  Configure Power BI tenant-level settings for service principal access
@@ -209,7 +209,7 @@ Paste the **Client Secret** into the same text document with the
 
 <img src="Images\ReadMe\media\image22.png" width=450 />
 
-## Testing the Tenant Management project with Visual Studio 2019
+## Test the Tenant Management project in Visual Studio 2019
 
 In order to run and test the **TenantManagement** project on a developer
 workstation, you must install the .NET 5 SDK and Visual Studio 2019.
