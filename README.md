@@ -96,12 +96,12 @@ left.
 Move down in the **Developer settings** section and expand the **Allow
 service principals to use Power BI APIs** section.
 
-<img src="Images\ReadMe\media\image5.png" width=450 />
+<img src="Images\ReadMe\media\image5.png" width=600 />
 
 Note that the **Allow service principals to use Power BI APIs** setting
 is initially set to **Disabled**.
 
-<img src="Images\ReadMe\media\image6.png" width=450  />
+<img src="Images\ReadMe\media\image6.png" width=600  />
 
 Change the setting to **Enabled**. After that, set the **Apply to**
 setting to **Specific security groups** and add the **Power BI Apps**
