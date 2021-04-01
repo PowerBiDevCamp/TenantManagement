@@ -352,7 +352,7 @@ Manager Console**.
 
 <img src="Images\ReadMe\media\image34.png" width=100% />
 
-You should see the **Package Manager Console** command prompt where you can type and execute PowerShell commands.
+You should see the **Package Manager Console** command prompt where you can execute PowerShell commands.
 
 <img src="Images\ReadMe\media\image35.png" width=100% />
 
