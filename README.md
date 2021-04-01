@@ -290,7 +290,7 @@ Inside the **AzureAd** section, update the **TenantId**, **ClientId**
 and **ClientSecret** with the data you collected when creating the Azure
 AD application named **Power BI Tenant Management Application.**
 
-<img src="Images\ReadMe\media\image28.png" width=600 />
+<img src="Images\ReadMe\media\image28.png" width=450 />
 
 If you are using Visual Studio 2019, you can leave the database
 connection string the way it is with the **Server** setting of
