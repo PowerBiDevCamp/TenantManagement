@@ -480,8 +480,7 @@ page in the Azure portal and drill into the **Members** page of the **Power
 BI Apps** security group, you will see that the **TenantManagement**
 application has also added the service principal for each azure AD
 application as a group member. This is important because these service
-principals must be added to this group in order to call the Power BI
-REST API.
+principals must be added to this Azure AD group or they will not be able to call the Power BI REST API.
 
 <img src="Images\ReadMe\media\image52.png" width=600 />
 
