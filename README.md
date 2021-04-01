@@ -221,21 +221,18 @@ the **TenantManagement** project using Visual Studio 2019, you can also
 open and run the project using Visual Studio Code if you prefer that
 IDE. Here are links to download this software if you need them.
 
-1.  .NET 5 SDK –
-    \[[download](https://dotnet.microsoft.com/download/dotnet/5.0)\]
-
-2.  Visual Studio 2019 –
-    \[[download](https://visualstudio.microsoft.com/downloads/)\]
-
-3.  Visual Studio Code –
-    \[[download](https://code.visualstudio.com/Download)\]
+1.  .NET 5 SDK – \[[download](https://dotnet.microsoft.com/download/dotnet/5.0)\]
+2.  Visual Studio 2019 – \[[download](https://visualstudio.microsoft.com/downloads/)\]
+3.  Visual Studio Code – \[[download](https://code.visualstudio.com/Download)\]
 
 ### Download the Source Code
 
 The source code for the **TenantManagement** project is maintained in a
 GitHib repository at the following URL.
 
--   <https://github.com/PowerBiDevCamp/TenantManagement>
+```
+<https://github.com/PowerBiDevCamp/TenantManagement>
+```
 
 You can download the **TenantManagement** project source files in a
 single ZIP archive using [this
