@@ -290,7 +290,7 @@ Inside the **AzureAd** section, update the **TenantId**, **ClientId**
 and **ClientSecret** with the data you collected when creating the Azure
 AD application named **Power BI Tenant Management Application.**
 
-<img src="Images\ReadMe\media\image28.png" width=800 />
+<img src="Images\ReadMe\media\image28.png" width=600 />
 
 If you are using Visual Studio 2019, you can leave the database
 connection string the way it is with the **Server** setting of
@@ -298,7 +298,7 @@ connection string the way it is with the **Server** setting of
 point to a different server if you'd rather create the project database
 named **TenantManagementDB** in a different location.
 
-<img src="Images\ReadMe\media\image29.png" width=800 />
+<img src="Images\ReadMe\media\image29.png" width=900 />
 
 In the **DemoSettings** section there is a property named **AdminUser**.
 The reason that this property exists has to with you being able to see
@@ -307,7 +307,7 @@ the **AdminUser** property setting with your Azure AD account name so
 that you will be added as an Admin member to any Power BI workspaces
 created by this application.
 
-<img src="Images\ReadMe\media\image30.png" width=800 />
+<img src="Images\ReadMe\media\image30.png" width=600 />
 
 ### Create the **TenantManagementDB** database
 
