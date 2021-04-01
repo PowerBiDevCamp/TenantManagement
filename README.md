@@ -407,7 +407,7 @@ you an see the new database named **TenantManagementDB**.
 If you expand the **Tables** node for **TenantManagementDB**, you should
 see the two tables named **AppIdentities** and **Tenants**.
 
-<img src="Images\ReadMe\media\image41.png" width=400 />
+<img src="Images\ReadMe\media\image41.png" width=300 />
 
 The **TenantManagementDB** database has now been set up and you are
 ready to run the application in the Visual Studio debugger.
