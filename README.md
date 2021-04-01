@@ -332,17 +332,17 @@ Entity Framework which contains two **DBSet** properties named
 **AppIdentites** and **Tenants**. When you generate the database, each
 of these **DBSet** properties will be created as database tables.
 
-<img src="Images\ReadMe\media\image31.png" style="width:6.49097in;height:3.14722in" />
+<img src="Images\ReadMe\media\image31.png" width=100% />
 
 The **AppIdentites** table is generated using the table schema defined
 by the **PowerBiAppIdentity** class.
 
-<img src="Images\ReadMe\media\image32.png" style="width:5.02431in;height:2.29444in" />
+<img src="Images\ReadMe\media\image32.png" width=600 />
 
 The **Tenants** table is generated using the table schema defined by the
 **PowerBiTenant** class.
 
-<img src="Images\ReadMe\media\image33.png" style="width:4.53403in;height:2.47222in" />
+<img src="Images\ReadMe\media\image33.png" width=600 />
 
 After you have inspected the code used to generated the database, close
 the source file named **TenantManagementDB.cs** without saving any
