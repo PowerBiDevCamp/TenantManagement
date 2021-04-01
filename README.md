@@ -337,12 +337,12 @@ of these **DBSet** properties will be created as database tables.
 The **AppIdentites** table is generated using the table schema defined
 by the **PowerBiAppIdentity** class.
 
-<img src="Images\ReadMe\media\image32.png" width=600 />
+<img src="Images\ReadMe\media\image32.png" width=400 />
 
 The **Tenants** table is generated using the table schema defined by the
 **PowerBiTenant** class.
 
-<img src="Images\ReadMe\media\image33.png" width=600 />
+<img src="Images\ReadMe\media\image33.png" width=400 />
 
 After you have inspected the code used to generated the database, close
 the source file named **TenantManagementDB.cs** without saving any
@@ -351,23 +351,25 @@ project database named **TenantManagementDB**. Open the Package Manager
 console by invoking the **Tools &gt; NuGet Package Manager &gt; Package
 Manager Console** command.
 
-<img src="Images\ReadMe\media\image34.png" style="width:4.05521in;height:1.24168in" />
+<img src="Images\ReadMe\media\image34.png" width=100% />
 
 You should now see the command prompt for the **Package Manager
 Console** where you can type and execute PowerShell commands.
 
-<img src="Images\ReadMe\media\image35.png" style="width:3.34969in;height:1.61769in" />
+<img src="Images\ReadMe\media\image35.png" width=100% />
 
 Type and execute the following **Add-Migration** command to create a new
 Entity Framework migration in the project.
 
+```PowerShell
 Add-Migration InitialCreate
+```
 
 The **Add-Migration** command should run without errors. If it fails you
 might have to modify the database connection string in
 **appsettings.json**.
 
-<img src="Images\ReadMe\media\image36.png" style="width:6.49722in;height:1.44792in" />
+<img src="Images\ReadMe\media\image36.png" width=600 />
 
 After running the Add-Migration command, you will see a new folder has
 been added to the project named **Migrations** with several C\# source
