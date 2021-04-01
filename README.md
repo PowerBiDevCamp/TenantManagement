@@ -101,19 +101,19 @@ service principals to use Power BI APIs** section.
 Note that the **Allow service principals to use Power BI APIs** setting
 is initially set to **Disabled**.
 
-<img src="Images\ReadMe\media\image6.png" style="width:4.69514in;height:2.27986in"  />
+<img src="Images\ReadMe\media\image6.png" width=450  />
 
 Change the setting to **Enabled**. After that, set the **Apply to**
 setting to **Specific security groups** and add the **Power BI Apps**
 security group as shown in the screenshot below. Click the **Apply**
 button to save your configuration changes.
 
-<img src="Images\ReadMe\media\image7.png" style="width:6.5in;height:4.28333in" />
+<img src="Images\ReadMe\media\image7.png" width=450 />
 
 You will see a notification indicating it might take up to 15 minutes to
 apply these changes to the organization.
 
-<img src="Images\ReadMe\media\image8.png" style="width:5.19103in;height:0.92992in" alt="Text Description automatically generated with medium confidence" />
+<img src="Images\ReadMe\media\image8.png" />
 
 Now scroll upward in the **Tenant setting** section of the Power BI
 admin portal and locate the **Workspace settings** section.
