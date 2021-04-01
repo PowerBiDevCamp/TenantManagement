@@ -464,7 +464,7 @@ Follow the same steps to create two more app identities named
 **ServicePrincipal02** and **ServicePrincipal03**. When you're done, the
 **App Identities** page should match the following screenshot.
 
-<img src="Images\ReadMe\media\image50.png" style="width:5.16564in;height:1.83591in" />
+<img src="Images\ReadMe\media\image50.png" width=100% />
 
 Note that behind the scenes the **TenantManagement** application is
 using the Microsoft Graph API to create new Azure AD application each
@@ -474,7 +474,7 @@ page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade
 in the Azure portal you will see that an Azure AD application has been
 created for each app identity you've created.
 
-<img src="Images\ReadMe\media\image51.png" style="width:5.14724in;height:2.04799in" />
+<img src="Images\ReadMe\media\image51.png" width=100% />
 
 If you return to the
 [Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)
@@ -485,7 +485,7 @@ application as a group member. This is important because these service
 principals must be added to this group in order to call the Power BI
 REST API.
 
-<img src="Images\ReadMe\media\image52.png" style="width:6.49722in;height:3.17153in" />
+<img src="Images\ReadMe\media\image52.png" width=100% />
 
 In addition to communicating with Azure AD to create and configure Azure
 AD application, the **TenantManagement** application also captures
@@ -494,7 +494,7 @@ metadata and authentication credentials and stores them in the
 able to retrieve these credentials and authenticate with Azure AD under
 the identity of any of these Azure AD applications.
 
-<img src="Images\ReadMe\media\image53.png" style="width:6.27607in;height:0.90693in" />
+<img src="Images\ReadMe\media\image53.png" width=100% />
 
 **CAVEAT**: Keep in mind that the **TenantManagement** application has
 been designed as a proof-of-concept (POC) application to teach concepts
@@ -514,60 +514,53 @@ Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts).
 Return to the **TenantManagement** application and navigate to the
 **Tenants** page.
 
-<img src="Images\ReadMe\media\image54.png" style="width:6.49097in;height:1.47222in" />
+<img src="Images\ReadMe\media\image54.png" width=100% />
 
 Click the **Onboard New Tenant** button to display the **Onboard New
 Tenant** page.
 
-<img src="Images\ReadMe\media\image55.png" style="width:4.08589in;height:1.32058in" />
+<img src="Images\ReadMe\media\image55.png" width=100% />
 
 You can create the first tenant using the default values supplied by the
 Onboard New Tenant page. Click to **Create New Tenant** button to begin
 the process of creating a new customer tenant.
 
-<img src="Images\ReadMe\media\image56.png" style="width:4.48466in;height:2.24209in" />
+<img src="Images\ReadMe\media\image56.png" width=100% />
 
 After a few seconds, you should see the next tenant has been created.
 
-<img src="Images\ReadMe\media\image57.png" style="width:5.54601in;height:1.06387in" />
+<img src="Images\ReadMe\media\image57.png" width=100% />
 
 Click the **Onboard New Tenant** button again to create a second tenant.
 
-<img src="Images\ReadMe\media\image58.png" style="width:5.54583in;height:1.04841in" />
+<img src="Images\ReadMe\media\image58.png" width=100% />
 
 When creating the second customer tenant, select a different database
 than the default selection and then click the **Create New Tenant**
 button.
 
-<img src="Images\ReadMe\media\image59.png" style="width:5.0184in;height:2.30062in" />
+<img src="Images\ReadMe\media\image59.png" width=100% />
 
 You should now have two customer tenants. Note they each tenant has a
 different app identity as its **Owner**.
 
-<img src="Images\ReadMe\media\image60.png" style="width:5.15337in;height:1.22232in" />
+<img src="Images\ReadMe\media\image60.png" width=100% />
 
 Follow the same steps to create two more customer tenants so that there
 are 3 app identities and 4 customer tenants. Once you have created more
 tenants then app identities, you should see app identity pooling where
 multiple customer tenants share the same app identity.
 
-<img src="Images\ReadMe\media\image61.png" style="width:6.49097in;height:2.21458in" />
+<img src="Images\ReadMe\media\image61.png" width=100% />
 
 As you create a new customer tenant, the **TenantManagement**
 application uses the Power BI REST API to implement the onboarding
 logic.
 
 1.  Create a new Power BI workspace
-
-2.  Upload a template PBIX file to create **Sales** dataset and
-    **Sales** report
-
-3.  Update dataset parameters on **Sales** dataset to point to this
-    customer's database
-
-4.  Patch credentials for the SQL datasource used by the **Sales**
-    dataset
-
+2.  Upload a template PBIX file to create **Sales** dataset and **Sales** report
+3.  Update dataset parameters on **Sales** dataset to point to this customer's database
+4.  Patch credentials for the SQL datasource used by the **Sales** dataset
 5.  Start a refresh operation on the **Sales** database
 
 The **TenantManagement** application also create a new record in the
@@ -575,22 +568,22 @@ The **TenantManagement** application also create a new record in the
 application identity associated with this customer tenant is tracked in
 the **Owner** column.
 
-<img src="Images\ReadMe\media\image62.png" style="width:6.49097in;height:0.63194in" />
+<img src="Images\ReadMe\media\image62.png" width=100% />
 
 You can click on the **View** button for a specific tenant on the
 **Power BI Tenant** page to drill into the **Tenant Details** page.
 
-<img src="Images\ReadMe\media\image63.png" style="width:6.49097in;height:1.57639in" />
+<img src="Images\ReadMe\media\image63.png" width=100% />
 
 The bottom of the **Tenant Details** page also shows details of the
 underlying Power BI workspace including its members, datasets and
 reports.
 
-<img src="Images\ReadMe\media\image64.png" style="width:5.82209in;height:3.45575in" />
+<img src="Images\ReadMe\media\image64.png" width=100% />
 
 Click on the back arrow to return to the Power BI Tenants page.
 
-<img src="Images\ReadMe\media\image65.png" style="width:5.31902in;height:1.63732in" />
+<img src="Images\ReadMe\media\image65.png" width=100% />
 
 ### Embed Reports
 
@@ -598,7 +591,7 @@ Now it's time to make use of the **TenantManagement** application's
 ability to embed reports. Click on the **Embed** button for the first
 customer tenant.
 
-<img src="Images\ReadMe\media\image66.png" style="width:6.49097in;height:2.22708in" />
+<img src="Images\ReadMe\media\image66.png" width=100% />
 
 You should see a page with an embedded report for that tenant. When you
 click on this button to embed a report, the **TenanantManagement**
@@ -608,18 +601,18 @@ app-only access token from Azure AD. That access token is then used to
 communicate with the Power BI Service to retrieve report metadata and
 generate an embed token for the embedding process.
 
-<img src="Images\ReadMe\media\image67.png" style="width:6.49722in;height:4.07361in" />
+<img src="Images\ReadMe\media\image67.png" width=100% />
 
 Click on the back arrow button to return to the **Tenants** page.
 
-<img src="Images\ReadMe\media\image68.png" style="width:6.49722in;height:2.48472in" />
+<img src="Images\ReadMe\media\image68.png" width=100% />
 
 Now test clicking the **Embed** button for other customer tenants. As
 you can see, the **TenantManagement** application has the ability to
 generate access tokens for any of the Azure applications that it has
 created.
 
-<img src="Images\ReadMe\media\image69.png" style="width:6.49722in;height:2.25139in" />
+<img src="Images\ReadMe\media\image69.png" width=100% />
 
 Inspect the Power BI Workspaces
 
@@ -628,20 +621,20 @@ able to go to the Power BI Service and examine the workspaces. Navigate
 to the Power BI Service portal at <https://app.powerbi.com> and examine
 the workspaces that have been created.
 
-<img src="Images\ReadMe\media\image70.png" style="width:3.10459in;height:3.34969in" />
+<img src="Images\ReadMe\media\image70.png" width=100% />
 
 Navigate to one of these workspaces such as **Tenant01**.
 
-<img src="Images\ReadMe\media\image71.png" style="width:6.49097in;height:2.46042in" />
+<img src="Images\ReadMe\media\image71.png" width=100% />
 
 Drill into the Setting page of the dataset named **Sales**.
 
-<img src="Images\ReadMe\media\image72.png" style="width:4.03067in;height:2.07436in" />
+<img src="Images\ReadMe\media\image72.png" width=100% />
 
 You should be able to verify that the dataset has been configured by one
 of the Azure AD application created by the **TenantManagement**
 application.
 
-<img src="Images\ReadMe\media\image73.png" style="width:6.49097in;height:1.88958in" />
+<img src="Images\ReadMe\media\image73.png" width=100% />
 
 This concludes the walkthrough of the **TenantManagement** application.
