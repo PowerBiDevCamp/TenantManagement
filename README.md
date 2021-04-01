@@ -116,7 +116,7 @@ apply these changes to the organization.
 <img src="Images\ReadMe\media\image8.png" />
 
 Now scroll upward in the **Tenant setting** section of the Power BI
-admin portal and locate the **Workspace settings** section.
+admin portal and locate **Workspace settings**.
 
 <img src="Images\ReadMe\media\image9.png"  width=600  />
 
