@@ -230,9 +230,7 @@ IDE. Here are links to download this software if you need them.
 The source code for the **TenantManagement** project is maintained in a
 GitHib repository at the following URL.
 
-```
-<https://github.com/PowerBiDevCamp/TenantManagement>
-```
+**[https://github.com/PowerBiDevCamp/TenantManagement](https://github.com/PowerBiDevCamp/TenantManagement)**
 
 You can download the **TenantManagement** project source files in a
 single ZIP archive using [this
