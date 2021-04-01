@@ -252,7 +252,7 @@ and a project file named **TenantManagement.csproj**.
 
 Launch Visual Studio 2019 and use the **File &gt; Open &gt;
 Project/Solution** menu command to open the solution file named
-**TenantManagement.sln**. This development project has been built as a
+**TenantManagement.sln**. You should note that this development project has been built as a
 .NET 5 MVC Web Application as shown in the following screenshot.
 
 <img src="Images\ReadMe\media\image24.png" width=350 />
