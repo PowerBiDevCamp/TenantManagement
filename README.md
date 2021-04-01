@@ -469,7 +469,7 @@ using the Microsoft Graph API to create new Azure AD application each
 time you create a new app identity. If you return pack to the [App
 registration
 page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
-in the Azure portal you will see that an Azure AD application has been
+in the Azure portal, you will see that an Azure AD application has been
 created for each app identity you've created.
 
 <img src="Images\ReadMe\media\image51.png" width=100% />
