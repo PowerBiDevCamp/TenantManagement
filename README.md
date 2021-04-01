@@ -414,7 +414,7 @@ ready to run the application in the Visual Studio debugger.
 
 Launch the **TenantManagement** web application in the Visual Studio
 debugger by pressing the **{F5}** key or clicking the Visual Studio
-**Play** button with the green arrow and the caption of **IIS Express**.
+**Play** button with the green arrow and the caption **IIS Express**.
 
 <img src="Images\ReadMe\media\image42.png" width=100% />
 
