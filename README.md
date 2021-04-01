@@ -73,7 +73,7 @@ page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlad
 in the Azure portal. Once you get to the **Groups** page in the Azure
 portal, click the **New group** link.
 
-<img src="Images\ReadMe\media\image1.png" style="width:6.5in;height:2.16667in" />
+<img src="Images\ReadMe\media\image1.png" width=400 />
 
 In the **New Group** dialog, Select a **Group type** of **Security** and
 enter a **Group name** of **Power BI Apps**. Click the **Create** button
