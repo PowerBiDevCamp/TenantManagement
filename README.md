@@ -596,12 +596,12 @@ Move to the **Power BI Tenants** page and click on the **Embed** button for the 
 <img src="Images\ReadMe\media\image66.png" width=100% />
 
 You should now see a page with an embedded report for that tenant. When you
-click the **Embed** button to embed a report, the **TenanantManagement**
+click the **Embed** button to embed a report for a customertenant, the **TenanantManagement**
 application retrieves credentials for the app identity associated with
-the customer tenant and uses Client Credentials Flow to acquire an
-app-only access token from Azure AD. That access token is then used to
-communicate with the Power BI Service to retrieve report metadata and
-generate an embed token for the embedding process.
+the tenant from the **TenantManagementDB** database. It then uses those credentials to 
+acquire an access token from Azure AD using Client Credentials Flow.
+That access token is then used to communicate with the Power BI Service to retrieve 
+report metadata and generate an embed token for the embedding process.
 
 <img src="Images\ReadMe\media\image67.png" width=100% />
 
