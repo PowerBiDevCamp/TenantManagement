@@ -53,7 +53,7 @@ Embedding](https://github.com/PowerBiDevCamp/Camp-Sessions/raw/master/Create%20P
 
 ## Setting up your development environment
 
-To set up the **TenantManagement** application doe testing, you will need to
+To set up the **TenantManagement** application for testing, you will need to
 configure a Microsoft 365 envviroment with the following tasks.
 
 1.  Create a Security Group in Azure AD named **Power BI Apps**
