@@ -2,7 +2,7 @@
 ## Outline
 1. [Introduction](https://github.com/PowerBiDevCamp/TenantManagement#introduction)
 2. [Set up your development environment](https://github.com/PowerBiDevCamp/TenantManagement#set-up-your-development-environment)
-  a. [Create an Azure AD security group named Power BI Apps](https://github.com/PowerBiDevCamp/TenantManagement#create-an-azure-ad-security-group-named-power-bi-apps)
+  * [Create an Azure AD security group named Power BI Apps](https://github.com/PowerBiDevCamp/TenantManagement#create-an-azure-ad-security-group-named-power-bi-apps)
   b. [Configure Power BI tenant-level settings for service principal access](https://github.com/PowerBiDevCamp/TenantManagement#configure-power-bi-tenant-level-settings-for-service-principal-access)
   c. [Create the Azure AD Application for the TenantManagement Application](https://github.com/PowerBiDevCamp/TenantManagement#create-the-azure-ad-application-for-the-tenantmanagement-application)
 3. [Test the Tenant Management project in Visual Studio 2019](https://github.com/PowerBiDevCamp/TenantManagement#test-the-tenant-management-project-in-visual-studio-2019)
