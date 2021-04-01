@@ -648,7 +648,7 @@ When creating a new customer tenant using the **Onboard New Tenant** page, you c
 
 <img src="Images\ReadMe\media\image74.png" width=100% />
 
-You should take note that The **AppIdentities** table in the **TenantManagementDB** database contains a boolean column named **Exclusive**. When an app identity is marked with an **Exclusive** column value as true, it know not to include that app identity in its pool scheme.
+You should take note that The **AppIdentities** table in the **TenantManagementDB** database contains a boolean column named **Exclusive**. When an app identity has an **Exclusive** column value of **true**, it know not to include that app identity in its pool scheme.
 
 <img src="Images\ReadMe\media\image76.png" width=100% />
 
