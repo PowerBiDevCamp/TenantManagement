@@ -402,12 +402,12 @@ menu command.
 Expand the **Databases** node for the server you are using and verify
 you an see the new database named **TenantManagementDB**.
 
-<img src="Images\ReadMe\media\image40.png" width=500 />
+<img src="Images\ReadMe\media\image40.png" width=400 />
 
 If you expand the **Tables** node for **TenantManagementDB**, you should
 see the two tables named **AppIdentities** and **Tenants**.
 
-<img src="Images\ReadMe\media\image41.png" width=200 />
+<img src="Images\ReadMe\media\image41.png" width=320 />
 
 The **TenantManagementDB** database has now been set up and you are
 ready to run the application in the Visual Studio debugger.
