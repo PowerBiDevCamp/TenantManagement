@@ -435,30 +435,30 @@ the **Accept** button to grant these permissions and continue.
 Once you have logged in, you should see your name in the welcome
 message.
 
-<img src="Images\ReadMe\media\image45.png" style="width:4.77914in;height:1.96493in" />
+<img src="Images\ReadMe\media\image45.png"  width=100%  />
 
 ### Create App Identities
 
 Now, you should start by creating a few new App Identities. Click the
 **App Identities** link to navigate to the **App Identities** page.
 
-<img src="Images\ReadMe\media\image46.png" style="width:5.06748in;height:1.31562in" />
+<img src="Images\ReadMe\media\image46.png"  width=100%  />
 
 Click the **Add New App Identity to Pool** button to display the
 **Create New App Identity** page.
 
-<img src="Images\ReadMe\media\image47.png" style="width:5.44785in;height:1.13305in" />
+<img src="Images\ReadMe\media\image47.png"  width=100% />
 
 The **Create New App Identity** page will automatically populate the
 textbox with the name with a value of **ServicePrincipal01**. Click the
 **Add New App Identity to Pool** button to create the new app identity.
 
-<img src="Images\ReadMe\media\image48.png" style="width:6.49722in;height:2.58889in" />
+<img src="Images\ReadMe\media\image48.png"  width=100%  />
 
 After a few second, you should see a new row in table on the **App
 Identities** page with **ServicePrinicpal01**.
 
-<img src="Images\ReadMe\media\image49.png" style="width:5.5092in;height:1.32666in" />
+<img src="Images\ReadMe\media\image49.png"  width=100%  />
 
 Follow the same steps to create two more app identities named
 **ServicePrincipal02** and **ServicePrincipal03**. When you're done, the
