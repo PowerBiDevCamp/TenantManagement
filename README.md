@@ -91,17 +91,17 @@ BI Service admin portal at <https://app.powerbi.com/admin-portal>. In
 the Power BI Admin portal, click the **Tenant settings** link on the
 left.
 
-<img src="Images\ReadMe\media\image4.png" style="width:4.38958in;height:2.87986in" alt="Graphical user interface, application Description automatically generated" />
+<img src="Images\ReadMe\media\image4.png" width=700 />
 
 Move down in the **Developer settings** section and expand the **Allow
 service principals to use Power BI APIs** section.
 
-<img src="Images\ReadMe\media\image5.png" style="width:4.89444in;height:3.01736in" alt="Graphical user interface, application Description automatically generated" />
+<img src="Images\ReadMe\media\image5.png" width=700 />
 
 Note that the **Allow service principals to use Power BI APIs** setting
 is initially set to **Disabled**.
 
-<img src="Images\ReadMe\media\image6.png" style="width:4.69514in;height:2.27986in" alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="Images\ReadMe\media\image6.png" style="width:4.69514in;height:2.27986in"  />
 
 Change the setting to **Enabled**. After that, set the **Apply to**
 setting to **Specific security groups** and add the **Power BI Apps**
