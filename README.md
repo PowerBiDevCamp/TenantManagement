@@ -453,8 +453,8 @@ When you open the **Create New App Identity** page, it will automatically popula
 
 <img src="Images\ReadMe\media\image48.png"  width=500  />
 
-After a few second, you should see a new row in table on the **App
-Identities** page with **ServicePrinicpal01**.
+After a few second, you should see the new app identity named **ServicePrinicpal01** on the **App
+Identities** page.
 
 <img src="Images\ReadMe\media\image49.png"  width=100%  />
 
