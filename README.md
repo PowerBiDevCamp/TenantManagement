@@ -369,7 +369,7 @@ The **Add-Migration** command should run without errors. If this command fails y
 might have to modify the database connection string in
 **appsettings.json**.
 
-<img src="Images\ReadMe\media\image36.png" width=500 />
+<img src="Images\ReadMe\media\image36.png" width=600 />
 
 After running the Add-Migration command, you will see a new folder has
 been added to the project named **Migrations** with several C\# source
@@ -377,7 +377,7 @@ files. There is no need to change anything in thee source files but you
 can inspect what's inside them if you are curious how the Entity
 Framework does its work.
 
-<img src="Images\ReadMe\media\image37.png" width=600 />
+<img src="Images\ReadMe\media\image37.png" width=500 />
 
 Return to the **Package Manager Console** and run the following
 **Update-Database** command to generate the database named
