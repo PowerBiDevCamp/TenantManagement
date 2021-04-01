@@ -524,7 +524,7 @@ the process of creating a new customer tenant.
 
 <img src="Images\ReadMe\media\image56.png" width=100% />
 
-After a few seconds, you should see the next tenant has been created.
+After a few seconds, you should see the new customer tenant has been created.
 
 <img src="Images\ReadMe\media\image57.png" width=100% />
 
