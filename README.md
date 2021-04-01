@@ -640,12 +640,12 @@ application.
 At this point you have created 
 
 
-<img src="Images\ReadMe\media\image70.png" width=100% />
+<img src="Images\ReadMe\media\image74.png" width=100% />
 
 
 xxxx
 
 
-<img src="Images\ReadMe\media\image70.png" width=100% />
+<img src="Images\ReadMe\media\image75.png" width=100% />
 
 This concludes the walkthrough of the **TenantManagement** application.
