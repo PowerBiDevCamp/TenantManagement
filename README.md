@@ -486,9 +486,9 @@ principals must be added to this Azure AD security group or they will not be abl
 
 In addition to communicating with Azure AD to create and configure Azure
 AD application, the **TenantManagement** application also captures
-metadata and authentication credentials and stores them in the
-**TenantManagementDB** database. The **TenantManagement** application is
-able to retrieve these credentials and authenticate with Azure AD under
+application metadata and authentication credentials so it can store them in the
+**TenantManagementDB** database. Soon you will see how the **TenantManagement** application is
+able to retrieve these credentials on demand and authenticate with Azure AD under
 the identity of any of these Azure AD applications.
 
 <img src="Images\ReadMe\media\image53.png" width=100% />
