@@ -424,7 +424,7 @@ right corner to begin the user login sequence.
 <img src="Images\ReadMe\media\image43.png" width=100% />
 
 The first time you authenticate with Azure AD, you'll be prompted with
-the following dialog asking you to accept the delegated permissions
+the **Permissions requested** dialog asking you to accept the delegated permissions
 requested by the application for the Microsoft Graph API. Click
 the **Accept** button to grant these permissions and continue.
 
