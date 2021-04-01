@@ -269,7 +269,7 @@ support including **Microsoft.Identity.Web** and
 **Microsoft.Identity.Web.UI**. The package named **Microsoft.Graph** has
 been included to support .NET programming with the Microsoft Graph API.
 The package named **Microsoft.PowerBI.Api** has been included to support
-.NET programming against the Power BI REST API.
+.NET programming with the Power BI REST API.
 
 <img src="Images\ReadMe\media\image26.png" width=500 />
 
@@ -289,7 +289,7 @@ AD application named **Power BI Tenant Management Application.**
 
 <img src="Images\ReadMe\media\image28.png" width=450 />
 
-If you are using Visual Studio 2019, you can leave the database
+If you are using Visual Studio 2019, you shoukd be able leave the database
 connection string the way it is with the **Server** setting of
 **(localdb)\\\\MSSQLLocalDB**. You can change this connection string to
 point to a different server if you'd rather create the project database
