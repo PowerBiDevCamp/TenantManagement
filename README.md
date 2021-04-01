@@ -519,7 +519,7 @@ Return to the **TenantManagement** application and navigate to the
 Click the **Onboard New Tenant** button to display the **Onboard New
 Tenant** page.
 
-<img src="Images\ReadMe\media\image55.png" width=100% />
+<img src="Images\ReadMe\media\image55.png" width=500 />
 
 You can create the first tenant using the default values supplied by the
 Onboard New Tenant page. Click to **Create New Tenant** button to begin
