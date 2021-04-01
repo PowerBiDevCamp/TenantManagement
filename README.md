@@ -1,5 +1,4 @@
 # The Tenant Management Application
-#### Outline
 * [Introduction](https://github.com/PowerBiDevCamp/TenantManagement#introduction)
 * [Set up your development environment](https://github.com/PowerBiDevCamp/TenantManagement#set-up-your-development-environment)
   * [Create an Azure AD security group named Power BI Apps](https://github.com/PowerBiDevCamp/TenantManagement#create-an-azure-ad-security-group-named-power-bi-apps)
