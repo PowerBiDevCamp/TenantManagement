@@ -604,7 +604,7 @@ generate an embed token for the embedding process.
 
 Click on the back arrow button to return to the **Tenants** page.
 
-<img src="Images\ReadMe\media\image68.png" width=100% />
+<img src="Images\ReadMe\media\image68.png" width=500 />
 
 Now test clicking the **Embed** button for other customer tenants. As
 you can see, the **TenantManagement** application has the ability to
