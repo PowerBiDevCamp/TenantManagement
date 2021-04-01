@@ -621,7 +621,7 @@ created.
 If you're curious about what's been created in Power BI, you should be
 able to go to the Power BI Service and examine the workspaces. Navigate
 to the Power BI Service portal at <https://app.powerbi.com> and examine
-the workspaces that have been created.
+the workspaces that have been created by the **TenantManagement** application.
 
 <img src="Images\ReadMe\media\image70.png" width=400 />
 
