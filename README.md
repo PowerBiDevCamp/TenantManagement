@@ -239,7 +239,9 @@ If you are familiar with the **git** utility, you can clone the project
 source files to your local developer workstation using the following
 **git** command.
 
+```PowerShell
 git clone <https://github.com/PowerBiDevCamp/TenantManagement.git>
+```
 
 Once you have downloaded the source files for the **TenantManagement**
 repository to your developer workstation, you will see there is a
