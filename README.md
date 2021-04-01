@@ -636,15 +636,15 @@ application.
 
 <img src="Images\ReadMe\media\image73.png" width=100% />
 
-### Create a Service Principal per Tenant
-At this point you have created 
+### Create a new Service Principal for each Tenant
+At this point you have used the **TenantManagement** application to pool app identities where one service principal will be the owner of multipe customer tenants.
+While this approach will work for many orgniazation and ISVs using Power BI embedding, you can take things one step further by creating a new service principal each time you create a new customer tenant.
 
+When creating a new customer tenant using the **Onboard New Tenant** page, you can select the option to **Create Tenant using New Exclusive App Identity**. If you select this option, the **TenantManagement** application will create a new Azure AD application and then use the service princiapl from that application to create the workspace in Power BI. 
 
 <img src="Images\ReadMe\media\image74.png" width=100% />
 
-
-xxxx
-
+You should take note that The **AppIdentities** table in the **TenantManagementDB** database contains a boolean column named **Exclusive**. When an app identity is marked with an **Exclusive** column value as true, it know not to include that app identity in its pool scheme.
 
 <img src="Images\ReadMe\media\image75.png" width=100% />
 
