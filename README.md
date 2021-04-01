@@ -519,7 +519,7 @@ Tenant** page.
 <img src="Images\ReadMe\media\image55.png" width=500 />
 
 You can create the first tenant using the default values supplied by the
-Onboard New Tenant page. Click to **Create New Tenant** button to begin
+**Onboard New Tenant** page. Click to **Create New Tenant** button to begin
 the process of creating a new customer tenant.
 
 <img src="Images\ReadMe\media\image56.png" width=100% />
