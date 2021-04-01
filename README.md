@@ -620,7 +620,7 @@ able to go to the Power BI Service and examine the workspaces. Navigate
 to the Power BI Service portal at <https://app.powerbi.com> and examine
 the workspaces that have been created.
 
-<img src="Images\ReadMe\media\image70.png" width=100% />
+<img src="Images\ReadMe\media\image70.png" width=500 />
 
 Navigate to one of these workspaces such as **Tenant01**.
 
