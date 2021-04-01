@@ -53,10 +53,10 @@ Embedding](https://github.com/PowerBiDevCamp/Camp-Sessions/raw/master/Create%20P
 
 ## Setting up your development environment
 
-To set up the TenantManagement application doe testing, you will need to
+To set up the **TenantManagement** application doe testing, you will need to
 configure a Microsoft 365 envviroment with the following tasks.
 
-1.  Create a Security Group in Azure AD named Power BI Apps
+1.  Create a Security Group in Azure AD named **Power BI Apps**
 2.  Configure Power BI Tenant-Level Settings for Service Principal Access
 3.  Create the Azure AD Application for the TenantManagement Application
 
@@ -76,7 +76,7 @@ In the **New Group** dialog, Select a **Group type** of **Security** and
 enter a **Group name** of **Power BI Apps**. Click the **Create** button
 to create the new Azure AD security group
 
-<img src="Images\ReadMe\media\image2.png" width=800 />
+<img src="Images\ReadMe\media\image2.png" width=500 />
 
 Verify that you can see the new security group named **Power BI Apps**
 on the Azure portal **Groups** page.
