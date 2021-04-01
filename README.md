@@ -636,4 +636,16 @@ application.
 
 <img src="Images\ReadMe\media\image73.png" width=100% />
 
+### Create a Service Principal per Tenant
+At this point you have created 
+
+
+<img src="Images\ReadMe\media\image70.png" width=100% />
+
+
+xxxx
+
+
+<img src="Images\ReadMe\media\image70.png" width=100% />
+
 This concludes the walkthrough of the **TenantManagement** application.
