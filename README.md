@@ -304,9 +304,8 @@ the **TenantManagement** application that will add the user specified by
 the **AdminUser** setting as a workspace admin any times it creates a new Power BI workspace.
 This just makes things much easier for you to see what's going on when you begin to run and test the application.
 
-Update the **AdminUser** property setting with your Azure AD account name so
-that you will be added as an Admin member to any Power BI workspaces
-created by this application.
+Update the **AdminUser** setting with your Azure AD account name so
+that you will be able to see all the Power BI workspaces created by this application.
 
 <img src="Images\ReadMe\media\image30.png" width=450 />
 
