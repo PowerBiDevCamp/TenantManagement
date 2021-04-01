@@ -151,10 +151,10 @@ organizational directory only**.
 
 <img src="Images\ReadMe\media\image13.png" width=800 />
 
-In the **Redirect URI** section leave the default selection of **Web**
-in the dropdown box. In the textbox to the right of the dropdown, enter
-a Redirect URI of **https://localhost:44300/signin-oidc**. Click the
-**Register** button to create the new Azure AD application.
+In the **Redirect URI** section...
+1. Leave the default selection of **Web** in the dropdown box
+2. Enter a **Redirect URI** of **https://localhost:44300/signin-oidc** 
+3. Click the **Register** button to create the new Azure AD application.
 
 <img src="Images\ReadMe\media\image14.png" width=800 />
 
