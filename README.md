@@ -550,7 +550,7 @@ multiple customer tenants share the same app identity.
 
 Now let's discuss what's going on behind the scenes.
 As you create a new customer tenant, the **TenantManagement**
-application uses the Power BI REST API to implement the onboarding
+application uses the Power BI REST API to implement the following onboarding
 logic.
 
 1.  Create a new Power BI workspace
