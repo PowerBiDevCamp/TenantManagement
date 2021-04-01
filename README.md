@@ -108,7 +108,7 @@ setting to **Specific security groups** and add the **Power BI Apps**
 security group as shown in the screenshot below. Click the **Apply**
 button to save your configuration changes.
 
-<img src="Images\ReadMe\media\image7.png" width=450 />
+<img src="Images\ReadMe\media\image7.png" width=600 />
 
 You will see a notification indicating it might take up to 15 minutes to
 apply these changes to the organization.
