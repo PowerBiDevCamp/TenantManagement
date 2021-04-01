@@ -323,6 +323,8 @@ shouldn't make any change to **TenantManagementDB.cs**. You are just
 going to inspect the file you understand how the **TenantManagementDB**
 database is generated.
 
+<img src="Images\ReadMe\media\image31.png" width=100% />
+
 When you inspect the code inside **TenantManagementDB.cs**, you will see
 a class named **TenantManagementDB** that derives from **DbContext** to
 add support for automatic database generation using Entity Framework.
@@ -330,8 +332,6 @@ The **TenantManagementDB** class serves as the top-level class for the
 Entity Framework which contains two **DBSet** properties named
 **AppIdentites** and **Tenants**. When you generate the database, each
 of these **DBSet** properties will be created as database tables.
-
-<img src="Images\ReadMe\media\image31.png" width=100% />
 
 The **AppIdentites** table is generated using the table schema defined
 by the **PowerBiAppIdentity** class.
