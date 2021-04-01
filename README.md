@@ -585,8 +585,13 @@ If you're interested, you can examine the details of other tenants as well.
 ### Embed Reports
 
 Now it's time to make use of the **TenantManagement** application's
-ability to embed reports. Click on the **Embed** button for the first
-customer tenant.
+ability to embed reports. When navigate to the **Embed** page for a customer tenant,
+the **TenantManagement** application must acquire an access token for whichever
+app identity was used to create the customer tenant. The service principal
+that is configured as the **Owner** of a tenant will be the only service principal 
+who will have access to access the target workspace in Power BI. 
+
+Click on the **Embed** button for the first customer tenant.
 
 <img src="Images\ReadMe\media\image66.png" width=100% />
 
