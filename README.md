@@ -532,7 +532,7 @@ Click the **Onboard New Tenant** button again to create a second tenant.
 
 <img src="Images\ReadMe\media\image58.png" width=100% />
 
-This time, select a different database then click **Create New Tenant**.
+This time, select a different database for **Database Name** then click **Create New Tenant**.
 
 <img src="Images\ReadMe\media\image59.png" width=100% />
 
