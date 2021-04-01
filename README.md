@@ -554,7 +554,7 @@ application uses the Power BI REST API to implement the following onboarding
 logic.
 
 1.  Create a new Power BI workspace
-2.  Upload a [template PBIX file](https://github.com/PowerBiDevCamp/TenantManagement/raw/main/TenantManagement/wwwroot/PBIX/DatasetTemplate.pbix) to create **Sales** dataset and **Sales** report
+2.  Upload a [template PBIX file](https://github.com/PowerBiDevCamp/TenantManagement/raw/main/TenantManagement/wwwroot/PBIX/DatasetTemplate.pbix) to create the **Sales** dataset and the **Sales** report
 3.  Update dataset parameters on **Sales** dataset to point to this customer's database
 4.  Patch credentials for the SQL datasource used by the **Sales** dataset
 5.  Start a refresh operation on the **Sales** database
