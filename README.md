@@ -307,7 +307,7 @@ the **AdminUser** property setting with your Azure AD account name so
 that you will be added as an Admin member to any Power BI workspaces
 created by this application.
 
-<img src="Images\ReadMe\media\image30.png" width=500 />
+<img src="Images\ReadMe\media\image30.png" width=450 />
 
 ### Create the **TenantManagementDB** database
 
