@@ -390,14 +390,14 @@ Update-Database
 The **Update-Database** command should run without errors and generate
 the database named **TenantManagementDB**.
 
-<img src="Images\ReadMe\media\image38.png" width=800 />
+<img src="Images\ReadMe\media\image38.png" width=720 />
 
 In Visual Studio, you can use the **SQL Server Object Explorer** to see
 the database that has just been created. Open the **SQL Server Object
 Explorer** by invoking the **View &gt;** **SQL Server Object Explorer**
 menu command.
 
-<img src="Images\ReadMe\media\image39.png" width=400 />
+<img src="Images\ReadMe\media\image39.png" width=500 />
 
 Expand the **Databases** node for the server you are using and verify
 you an see the new database named **TenantManagementDB**.
