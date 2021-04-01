@@ -575,8 +575,7 @@ Click on the **View** button for a specific tenant on the
 
 <img src="Images\ReadMe\media\image63.png" width=100% />
 
-The **Tenant Details** page displays details of the
-underlying Power BI workspace including its members, datasets and
+The **Tenant Details** page displays details of its Power BI workspace including its members, datasets and
 reports.
 
 <img src="Images\ReadMe\media\image64.png" width=100% />
