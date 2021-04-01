@@ -642,7 +642,7 @@ as part of its tenant onboarding logic.
 
 ### Create a Seperate Service Principal for Each Tenant
 At this point you have used the **TenantManagement** application to pool app identities where one service principal can be the owner of multipe customer tenants.
-While this approach will work for many orgniazation and ISVs using Power BI embedding, you can take things one step further by creating a new service principal each time you create a new customer tenant. An application design based on a one-to-one relation between service principals and customer tenants will provide the most secure level of isolation. When you pool a service principal across tenants, that service principal will be the owner of datasource credentials for more than a single client.
+While this approach will work for many orgniazation and ISVs using Power BI embedding, you can take things one step further by creating a new service principal each time you create a new customer tenant. An application design which maintains a one-to-one relation between service principals and customer tenants will provide the most secure level of isolation. When you pool a service principal across tenants, that service principal will be the owner of datasource credentials for more than a single client.
 
 When creating a new customer tenant using the **Onboard New Tenant** page, you can select the option to **Create Tenant using New Exclusive App Identity**. If you select this option, the **TenantManagement** application will create a new Azure AD application and then use the service princiapl from that application to create the workspace in Power BI. 
 
