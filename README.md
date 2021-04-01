@@ -170,7 +170,7 @@ configure the project's support for Client Credentials Flow.
 Copy the **Client ID** (aka Application ID) and paste it into a text
 document so you can use it later in the setup process. Note that 
 this **Client ID** value will be used by **TenantManagement**
-project to configure user authentication with Azure AD.
+project to configure authentication with Azure AD.
 
 <img src="Images\ReadMe\media\image16.png" width=600 />
 
