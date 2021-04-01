@@ -258,7 +258,7 @@ Project/Solution** menu command to open the solution file named
 **TenantManagement.sln**. This development project has been built as a
 .NET 5 MVC Web Application as shown in the following screenshot.
 
-<img src="Images\ReadMe\media\image24.png" width=500 />
+<img src="Images\ReadMe\media\image24.png" width=400 />
 
 Let's quickly review the NuGet packages that have been installed in the
 **TenantManagement** project. There are several NuGet packages which add
