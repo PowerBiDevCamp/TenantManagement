@@ -437,7 +437,7 @@ message.
 
 ### Create App Identities
 
-Now, you should start by creating a few new App Identities. Click the
+Start by creating a few new App Identities. Click the
 **App Identities** link to navigate to the **App Identities** page.
 
 <img src="Images\ReadMe\media\image46.png"  width=100%  />
