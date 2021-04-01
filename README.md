@@ -258,14 +258,14 @@ Project/Solution** menu command to open the solution file named
 **TenantManagement.sln**. This development project has been built as a
 .NET 5 MVC Web Application as shown in the following screenshot.
 
-<img src="Images\ReadMe\media\image24.png" style="width:2.69939in;height:3.31607in" />
+<img src="Images\ReadMe\media\image24.png" width=500 />
 
 Let's quickly review the NuGet packages that have been installed in the
 **TenantManagement** project. There are several NuGet packages which add
 Entity Framework support which make it possible to quickly create the
 SQL Server database associated with this project.
 
-<img src="Images\ReadMe\media\image25.png" style="width:4.22086in;height:3.10474in" />
+<img src="Images\ReadMe\media\image25.png" width=500 />
 
 There are several packages included to add Azure AD authentication
 support including **Microsoft.Identity.Web** and
@@ -274,7 +274,7 @@ been included to support .NET programming with the Microsoft Graph API.
 The package named **Microsoft.PowerBI.Api** has been included to support
 .NET programming against the Power BI REST API.
 
-<img src="Images\ReadMe\media\image26.png" style="width:4.23926in;height:2.38382in" />
+<img src="Images\ReadMe\media\image26.png" width=500 />
 
 ### Update application settings in the appsettings.json file
 
