@@ -447,7 +447,7 @@ Click the **Add New App Identity to Pool** button to display the
 
 <img src="Images\ReadMe\media\image47.png"  width=100% />
 
-The **Create New App Identity** page will automatically populate the
+When you open the **Create New App Identity** page, it will automatically populate the
 **App Identity Name** textbox with a value of **ServicePrincipal01**. Click the
 **Add New App Identity to Pool** button to create the new app identity.
 
