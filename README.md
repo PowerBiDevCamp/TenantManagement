@@ -453,7 +453,7 @@ The **Create New App Identity** page will automatically populate the
 textbox with the name with a value of **ServicePrincipal01**. Click the
 **Add New App Identity to Pool** button to create the new app identity.
 
-<img src="Images\ReadMe\media\image48.png"  width=400  />
+<img src="Images\ReadMe\media\image48.png"  width=500  />
 
 After a few second, you should see a new row in table on the **App
 Identities** page with **ServicePrinicpal01**.
