@@ -332,7 +332,6 @@ The **TenantManagementDB** class serves as the top-level class for the
 Entity Framework which contains two **DBSet** properties named
 **AppIdentites** and **Tenants**. When you generate the database, each
 of these **DBSet** properties will be created as database tables.
-
 The **AppIdentites** table is generated using the table schema defined
 by the **PowerBiAppIdentity** class.
 
