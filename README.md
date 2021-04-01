@@ -567,7 +567,7 @@ the **Owner** column.
 <img src="Images\ReadMe\media\image62.png" width=100% />
 
 Click on the **View** button for a specific tenant on the
-**Power BI Tenant** page to drill into the **Tenant Details** page.
+**Power BI Tenants** page to drill into the **Tenant Details** page.
 
 <img src="Images\ReadMe\media\image63.png" width=100% />
 
