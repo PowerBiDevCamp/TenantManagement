@@ -576,11 +576,11 @@ reports.
 
 <img src="Images\ReadMe\media\image64.png" width=100% />
 
-Click on the back arrow to return to the Power BI Tenants page.
+Click on the back arrow to return to the **Power BI Tenants** page.
 
 <img src="Images\ReadMe\media\image65.png" width=100% />
 
-You can examine the other tenants as well if you're interested.
+If you're interested, you can examine the details of other tenants as well.
 
 ### Embed Reports
 
