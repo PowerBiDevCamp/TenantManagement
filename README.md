@@ -1,7 +1,24 @@
 # The Tenant Management Application
+## Outline
+1. [Introduction](https://github.com/PowerBiDevCamp/TenantManagement#introduction)
+2. [Set up your development environment](https://github.com/PowerBiDevCamp/TenantManagement#set-up-your-development-environment)
+  a. [Create an Azure AD security group named Power BI Apps](https://github.com/PowerBiDevCamp/TenantManagement#create-an-azure-ad-security-group-named-power-bi-apps)
+  b. [Configure Power BI tenant-level settings for service principal access](https://github.com/PowerBiDevCamp/TenantManagement#configure-power-bi-tenant-level-settings-for-service-principal-access)
+  c. [Create the Azure AD Application for the TenantManagement Application](https://github.com/PowerBiDevCamp/TenantManagement#create-the-azure-ad-application-for-the-tenantmanagement-application)
+3. [Test the Tenant Management project in Visual Studio 2019](https://github.com/PowerBiDevCamp/TenantManagement#test-the-tenant-management-project-in-visual-studio-2019)
+  a. [Download the Source Code](https://github.com/PowerBiDevCamp/TenantManagement#download-the-source-code)
+  b. [Open the Project in Visual Studio 2019](https://github.com/PowerBiDevCamp/TenantManagement#open-the-project-in-visual-studio-2019)
+  c. [Update application settings in the appsettings.json file](https://github.com/PowerBiDevCamp/TenantManagement#update-application-settings-in-the-appsettingsjson-file)
+  d. [Create the TenantManagementDB database](https://github.com/PowerBiDevCamp/TenantManagement#create-the-tenantmanagementdb-database)
+4. [Test the Tenant Management Application](https://github.com/PowerBiDevCamp/TenantManagement#test-the-tenant-management-application)
+  a. [Create App Identities](https://github.com/PowerBiDevCamp/TenantManagement#create-app-identities)
+  b. [Create New Power BI Tenants](https://github.com/PowerBiDevCamp/TenantManagement#create-new-power-bi-tenants)
+  c. [Embed Reports](https://github.com/PowerBiDevCamp/TenantManagement#embed-reports)
+  d. [Inspect the Power BI Workspaces](https://github.com/PowerBiDevCamp/TenantManagement#inspect-the-power-bi-workspaces)
+  e. [Create a Separate Service Principal for Each Tenant](https://github.com/PowerBiDevCamp/TenantManagement#create-a-separate-service-principal-for-each-tenant)
 
-The
-[TenantManagement](https://github.com/PowerBiDevCamp/TenantManagement/tree/main/TenantManagement)
+## Introduction
+The [TenantManagement](https://github.com/PowerBiDevCamp/TenantManagement/tree/main/TenantManagement)
 application is a sample .NET 5 application which demonstrates how to
 manage service principals within a large-scale Power BI embedding
 environment with 1000's of customer tenants. Let's start by explaining
