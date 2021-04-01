@@ -624,7 +624,7 @@ the workspaces that have been created.
 
 Navigate to one of these workspaces such as **Tenant01**.
 
-<img src="Images\ReadMe\media\image71.png" width=600 />
+<img src="Images\ReadMe\media\image71.png" width=720 />
 
 Drill into the Setting page of the dataset named **Sales**.
 
