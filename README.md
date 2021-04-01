@@ -210,7 +210,7 @@ clipboard** button to copy the Client Secret into the clipboard.
 Paste the **Client Secret** into the same text document with the
 **Client ID** and **Tenant ID**.
 
-<img src="Images\ReadMe\media\image22.png" width=600 />
+<img src="Images\ReadMe\media\image22.png" width=450 />
 
 ## Testing the Tenant Management project with Visual Studio 2019
 
