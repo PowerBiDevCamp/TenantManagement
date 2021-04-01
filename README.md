@@ -284,13 +284,13 @@ must update several critical application settings in the
 examine the JSON content inside. There is three important sections named
 **AzureAd**, **TenantManagementDB** and **DemoSettings**.
 
-<img src="Images\ReadMe\media\image27.png" style="width:6.5in;height:1.96667in" />
+<img src="Images\ReadMe\media\image27.png" width=800 />
 
 Inside the **AzureAd** section, update the **TenantId**, **ClientId**
 and **ClientSecret** with the data you collected when creating the Azure
 AD application named **Power BI Tenant Management Application.**
 
-<img src="Images\ReadMe\media\image28.png" style="width:5.27639in;height:2.00625in" />
+<img src="Images\ReadMe\media\image28.png" width=800 />
 
 If you are using Visual Studio 2019, you can leave the database
 connection string the way it is with the **Server** setting of
@@ -298,7 +298,7 @@ connection string the way it is with the **Server** setting of
 point to a different server if you'd rather create the project database
 named **TenantManagementDB** in a different location.
 
-<img src="Images\ReadMe\media\image29.png" style="width:6.49722in;height:0.84028in" />
+<img src="Images\ReadMe\media\image29.png" width=800 />
 
 In the **DemoSettings** section there is a property named **AdminUser**.
 The reason that this property exists has to with you being able to see
@@ -307,7 +307,7 @@ the **AdminUser** property setting with your Azure AD account name so
 that you will be added as an Admin member to any Power BI workspaces
 created by this application.
 
-<img src="Images\ReadMe\media\image30.png" style="width:5.24514in;height:1.70556in" />
+<img src="Images\ReadMe\media\image30.png" width=800 />
 
 ### Create the **TenantManagementDB** database
 
