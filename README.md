@@ -249,7 +249,7 @@ top-level project folder named **TenantManagement** which contains
 several files including a solution file named **TenantManagement.sln**
 and a project file named **TenantManagement.csproj**.
 
-<img src="Images\ReadMe\media\image23.png" style="width:4.30061in;height:2.48388in" alt="Graphical user interface, application Description automatically generated" />
+<img src="Images\ReadMe\media\image23.png" width=700 />
 
 ### Open the Project in Visual Studio 2019
 
