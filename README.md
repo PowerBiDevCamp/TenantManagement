@@ -369,7 +369,7 @@ The **Add-Migration** command should run without errors. If this command fails y
 might have to modify the database connection string in
 **appsettings.json**.
 
-<img src="Images\ReadMe\media\image36.png" width=600 />
+<img src="Images\ReadMe\media\image36.png" width=720 />
 
 After running the Add-Migration command, you will see a new folder has
 been added to the project named **Migrations** with several C\# source
