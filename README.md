@@ -284,7 +284,7 @@ must update several critical application settings in the
 examine the JSON content inside. There is three important sections named
 **AzureAd**, **TenantManagementDB** and **DemoSettings**.
 
-<img src="Images\ReadMe\media\image27.png" width=800 />
+<img src="Images\ReadMe\media\image27.png" width=100% />
 
 Inside the **AzureAd** section, update the **TenantId**, **ClientId**
 and **ClientSecret** with the data you collected when creating the Azure
