@@ -624,11 +624,11 @@ the workspaces that have been created.
 
 Navigate to one of these workspaces such as **Tenant01**.
 
-<img src="Images\ReadMe\media\image71.png" width=100% />
+<img src="Images\ReadMe\media\image71.png" width=600 />
 
 Drill into the Setting page of the dataset named **Sales**.
 
-<img src="Images\ReadMe\media\image72.png" width=100% />
+<img src="Images\ReadMe\media\image72.png" width=600 />
 
 You should be able to verify that the dataset has been configured by one
 of the Azure AD application created by the **TenantManagement**
