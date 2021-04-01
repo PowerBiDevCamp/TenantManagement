@@ -369,7 +369,7 @@ The **Add-Migration** command should run without errors. If it fails you
 might have to modify the database connection string in
 **appsettings.json**.
 
-<img src="Images\ReadMe\media\image36.png" width=600 />
+<img src="Images\ReadMe\media\image36.png" width=800 />
 
 After running the Add-Migration command, you will see a new folder has
 been added to the project named **Migrations** with several C\# source
@@ -377,25 +377,27 @@ files. There is no need to change anything in thee source files but you
 can inspect what's inside them if you are curious how the Entity
 Framework does its work.
 
-<img src="Images\ReadMe\media\image37.png" style="width:4.65in;height:2.53958in" />
+<img src="Images\ReadMe\media\image37.png" width=600 />
 
 Return to the **Package Manager Console** and run the following
 **Update-Database** command to generate the database named
 **TenantManagementDB**.
 
+```PowerShell
 Update-Database
+```
 
 The **Update-Database** command should run without errors and generate
 the database named **TenantManagementDB**.
 
-<img src="Images\ReadMe\media\image38.png" style="width:4.72393in;height:1.38428in" />
+<img src="Images\ReadMe\media\image38.png" width=800 />
 
 In Visual Studio, you can use the **SQL Server Object Explorer** to see
 the database that has just been created. Open the **SQL Server Object
 Explorer** by invoking the **View &gt;** **SQL Server Object Explorer**
 menu command.
 
-<img src="Images\ReadMe\media\image39.png" style="width:3.1411in;height:1.66017in" />
+<img src="Images\ReadMe\media\image39.png" width=600 />
 
 Expand the **Databases** node for the server you are using and verify
 you an see the new database named **TenantManagementDB**.
