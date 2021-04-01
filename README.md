@@ -532,9 +532,7 @@ Click the **Onboard New Tenant** button again to create a second tenant.
 
 <img src="Images\ReadMe\media\image58.png" width=100% />
 
-When creating the second customer tenant, select a different database
-than the default selection and then click the **Create New Tenant**
-button.
+This time, select a different database then click **Create New Tenant**.
 
 <img src="Images\ReadMe\media\image59.png" width=100% />
 
