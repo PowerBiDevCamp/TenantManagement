@@ -299,8 +299,12 @@ named **TenantManagementDB** in a different location.
 
 In the **DemoSettings** section there is a property named **AdminUser**.
 The reason that this property exists has to with you being able to see
-Power BI workspaces as they are created by service principals. Update
-the **AdminUser** property setting with your Azure AD account name so
+Power BI workspaces as they are created by service principals. There is code in
+the **TenantManagement** application that will add the user specified by 
+the **AdminUser** setting as a workspace admin any times it creates a new Power BI workspace.
+This just makes things much easier for you to see what's going on when you begin to run and test the application.
+
+Update the **AdminUser** property setting with your Azure AD account name so
 that you will be added as an Admin member to any Power BI workspaces
 created by this application.
 
