@@ -127,9 +127,8 @@ in the **Power BI Apps** group will be able to create new workspaces.
 
 <img src="Images\ReadMe\media\image10.png" width=600 />
 
-In the **Workspace settings** section, set the **Apply to** setting to
-**The entire organization**. Click the **Apply** button to save your
-configuration changes.
+In **Workspace settings**, set **Apply to** to
+**The entire organization** and click the **Apply** button to save your changes.
 
 <img src="Images\ReadMe\media\image11.png" width=600 />
 
