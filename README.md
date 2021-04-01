@@ -335,12 +335,12 @@ of these **DBSet** properties will be created as database tables.
 The **AppIdentites** table is generated using the table schema defined
 by the **PowerBiAppIdentity** class.
 
-<img src="Images\ReadMe\media\image32.png" width=400 />
+<img src="Images\ReadMe\media\image32.png" width=450 />
 
 The **Tenants** table is generated using the table schema defined by the
 **PowerBiTenant** class.
 
-<img src="Images\ReadMe\media\image33.png" width=400 />
+<img src="Images\ReadMe\media\image33.png" width=450 />
 
 After you have inspected the code used to generated the database, close
 the source file named **TenantManagementDB.cs** without saving any
