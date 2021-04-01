@@ -628,7 +628,7 @@ Navigate to one of these workspaces such as **Tenant01**.
 
 <img src="Images\ReadMe\media\image71.png" width=720 />
 
-Drill into the Setting page of the dataset named **Sales**.
+Drill into the **Setting** page for the dataset named **Sales**.
 
 <img src="Images\ReadMe\media\image72.png" width=600 />
 
