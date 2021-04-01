@@ -580,6 +580,8 @@ Click on the back arrow to return to the Power BI Tenants page.
 
 <img src="Images\ReadMe\media\image65.png" width=100% />
 
+You can examine the other tenants as well if you're interested.
+
 ### Embed Reports
 
 Now it's time to make use of the **TenantManagement** application's
