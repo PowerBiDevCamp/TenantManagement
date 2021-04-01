@@ -240,7 +240,7 @@ source files to your local developer workstation using the following
 **git** command.
 
 ```PowerShell
-git clone <https://github.com/PowerBiDevCamp/TenantManagement.git>
+git clone https://github.com/PowerBiDevCamp/TenantManagement.git
 ```
 
 Once you have downloaded the source files for the **TenantManagement**
