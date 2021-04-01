@@ -646,6 +646,6 @@ When creating a new customer tenant using the **Onboard New Tenant** page, you c
 
 You should take note that The **AppIdentities** table in the **TenantManagementDB** database contains a boolean column named **Exclusive**. When an app identity is marked with an **Exclusive** column value as true, it know not to include that app identity in its pool scheme.
 
-<img src="Images\ReadMe\media\image75.png" width=100% />
+<img src="Images\ReadMe\media\image76.png" width=100% />
 
 This concludes the walkthrough of the **TenantManagement** application.
