@@ -313,9 +313,8 @@ that you will be able to see all the Power BI workspaces created by this applica
 
 Before you can run the application in Visual Studio, you must create the
 project database named **TenantManagementDB**. This database schema has
-been created using the .NET 5 version of the Entity Framework. Creating
-the database will require you to run two PowerShell commands in Visual
-Studio.
+been created using the .NET 5 version of the Entity Framework. In this step,
+you will execute two Entity Framework PowerShell to create the database.
 
 Before creating the **TenantManagementDB** database, take a moment to
 understand how it’s been structured. Start by opening the file named
