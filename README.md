@@ -193,7 +193,7 @@ the **Certificates & secrets** page. On the **Certificates & secrets**
 page, click the **New client secret** button as shown in the following
 screenshot.
 
-<img src="Images\ReadMe\media\image19.png" width=600 />
+<img src="Images\ReadMe\media\image19.png" width=800 />
 
 In the **Add a client secret** dialog, add a text description such as
 **Test Secret** and then click the **Add** button to create the new
