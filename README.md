@@ -168,7 +168,7 @@ configure the project's support for Client Credentials Flow.
 <img src="Images\ReadMe\media\image15.png" width=800 />
 
 Copy the **Client ID** (aka Application ID) and paste it into a text
-document so you can use it later in the setup process. Note that this is
+document so you can use it later in the setup process. Note that 
 the **Client ID** value that will be used by **TenantManagement**
 project to authenticate users.
 
