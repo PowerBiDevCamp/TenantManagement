@@ -633,7 +633,7 @@ Drill into the **Setting** page for the dataset named **Sales**.
 <img src="Images\ReadMe\media\image72.png" width=600 />
 
 You should be able to verify that the dataset has been configured by one
-of the Azure AD application created by the **TenantManagement**
+of the Azure AD applications that has been created by the **TenantManagement**
 application. You should also be able to verify the last refresh succeeded.
 This is for the refresh operation that was started by the **TenantManagement** 
 at the end of the code with the tenant onboarding logic. 
