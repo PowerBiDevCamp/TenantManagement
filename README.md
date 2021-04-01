@@ -595,7 +595,7 @@ Move to the **Power BI Tenants** page and click on the **Embed** button for the 
 
 <img src="Images\ReadMe\media\image66.png" width=100% />
 
-You should see a page with an embedded report for that tenant. When you
+You should now see a page with an embedded report for that tenant. When you
 click on this button to embed a report, the **TenanantManagement**
 application retrieves credentials for the app identity associated with
 the customer tenant and uses Client Credentials Flow to acquire an
