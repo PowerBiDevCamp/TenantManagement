@@ -136,7 +136,7 @@ configuration changes.
 You have now completed the configuration of Power BI tenant-level
 settings.
 
-### Create the Azure AD Application for the TenantManagement Application
+### Create the Azure AD Application for the **TenantManagement** Application
 
 When you login to the Azure portal to create the new Azure AD
 application, make sure you log in using a user account in the same
@@ -145,21 +145,21 @@ navigating to the [App
 registration](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
 page in the Azure portal and click the **New registration** link.
 
-<img src="Images\ReadMe\media\image12.png" width=600 />
+<img src="Images\ReadMe\media\image12.png" width=800 />
 
 On the **Register an application** page, enter an application name such
 as **Power BI Tenant Management Application** and accept the default
 selection for **Supported account types** of **Accounts in this
 organizational directory only**.
 
-<img src="Images\ReadMe\media\image13.png" width=600 />
+<img src="Images\ReadMe\media\image13.png" width=800 />
 
 In the **Redirect URI** section leave the default selection of **Web**
 in the dropdown box. In the textbox to the right of the dropdown, enter
 a Redirect URI of **https://localhost:44300/signin-oidc**. Click the
 **Register** button to create the new Azure AD application.
 
-<img src="Images\ReadMe\media\image14.png" width=600 />
+<img src="Images\ReadMe\media\image14.png" width=800 />
 
 After creating a new Azure AD application in the Azure portal, you
 should see the Azure AD application overview page which displays the
@@ -168,7 +168,7 @@ the ***Client ID***, so don't let this confuse you. You will need to
 copy this Application ID and store it so you can use it later to
 configure the project's support for Client Credentials Flow.
 
-<img src="Images\ReadMe\media\image15.png" width=600 />
+<img src="Images\ReadMe\media\image15.png" width=800 />
 
 Copy the **Client ID** (aka Application ID) and paste it into a text
 document so you can use it later in the setup process. Note that this is
