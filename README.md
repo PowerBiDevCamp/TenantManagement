@@ -611,7 +611,7 @@ Click on the back arrow button to return to the **Tenants** page.
 
 Now test clicking the **Embed** button for other customer tenants. As
 you can see, the **TenantManagement** application has the ability to
-generate access tokens for any of the Azure applications that it has
+acquire access tokens for any of the Azure AD applications that it has
 created.
 
 <img src="Images\ReadMe\media\image69.png" width=100% />
