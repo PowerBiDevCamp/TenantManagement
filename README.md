@@ -345,7 +345,9 @@ The **Tenants** table is generated using the table schema defined by the
 After you have inspected the code used to generated the database, close
 the source file named **TenantManagementDB.cs** without saving any
 changes. The next step is to run the PowerShell commands to create the
-project database named **TenantManagementDB**. Open the Package Manager
+project database named **TenantManagementDB**. 
+
+Open the Package Manager
 console by invoking the **Tools &gt; NuGet Package Manager &gt; Package
 Manager Console** command.
 
