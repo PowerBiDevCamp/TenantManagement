@@ -217,11 +217,21 @@ Paste the **Client Secret** into the same text document with the
 
 ## Testing the Tenant Management project with Visual Studio 2019
 
-Here are the steps. You must install Visual Studio 2019or Visual Studio
-Code to run this sample, You can use either of these although this
-document will cover the details of getting the project running with
-Visual Studio 2019. You will have to figure itu out on your own if you
-are using Visual Studio Code.
+In order to run and test the **TenantManagement** project on a developer
+workstation, you must install the .NET 5 SDK and Visual Studio 2019.
+While this document will walk through the steps of opening and running
+the **TenantManagement** project using Visual Studio 2019, you can also
+open and run the project using Visual Studio Code if you prefer that
+IDE. Here are links to download this software if you need them.
+
+1.  .NET 5 SDK –
+    \[[download](https://dotnet.microsoft.com/download/dotnet/5.0)\]
+
+2.  Visual Studio 2019 –
+    \[[download](https://visualstudio.microsoft.com/downloads/)\]
+
+3.  Visual Studio Code –
+    \[[download](https://code.visualstudio.com/Download)\]
 
 ### Download the Source Code
 
@@ -230,101 +240,410 @@ GitHib repository at the following URL.
 
 -   <https://github.com/PowerBiDevCamp/TenantManagement>
 
-You can download the project source files as a ZIP archive using [this
+You can download the **TenantManagement** project source files in a
+single ZIP archive using [this
 link](https://github.com/PowerBiDevCamp/TenantManagement/archive/refs/heads/main.zip).
 If you are familiar with the **git** utility, you can clone the project
-source files to your local computer using the following **git** command.
+source files to your local developer workstation using the following
+**git** command.
 
 git clone <https://github.com/PowerBiDevCamp/TenantManagement.git>
 
 Once you have downloaded the source files for the **TenantManagement**
-repository to your local computer, you will see there is a top-level
-folder named **TenantManagement** which contains several files including
-a Visual Studio solution file named **TenantManagement.sln**.
+repository to your developer workstation, you will see there is a
+top-level project folder named **TenantManagement** which contains
+several files including a solution file named **TenantManagement.sln**
+and a project file named **TenantManagement.csproj**.
 
-<img src="Images\ReadMe\media\image23.png" style="width:6.10526in;height:3.52618in" alt="Graphical user interface, application Description automatically generated" />
+<img src="Images\ReadMe\media\image23.png" style="width:4.30061in;height:2.48388in" alt="Graphical user interface, application Description automatically generated" />
 
 ### Open the Project in Visual Studio 2019
 
-Xxxxx
+Launch Visual Studio 2019 and use the **File &gt; Open &gt;
+Project/Solution** menu command to open the solution file named
+**TenantManagement.sln**. This development project has been built as a
+.NET 5 MVC Web Application as shown in the following screenshot.
 
-<img src="Images\ReadMe\media\image24.png" style="width:3.45625in;height:4.24583in" />
+<img src="Images\ReadMe\media\image24.png" style="width:2.69939in;height:3.31607in" />
 
-zzz
+Let's quickly review the NuGet packages that have been installed in the
+**TenantManagement** project. There are several NuGet packages which add
+Entity Framework support which make it possible to quickly create the
+SQL Server database associated with this project.
+
+<img src="Images\ReadMe\media\image25.png" style="width:4.22086in;height:3.10474in" />
+
+There are several packages included to add Azure AD authentication
+support including **Microsoft.Identity.Web** and
+**Microsoft.Identity.Web.UI**. The package named **Microsoft.Graph** has
+been included to support .NET programming with the Microsoft Graph API.
+The package named **Microsoft.PowerBI.Api** has been included to support
+.NET programming against the Power BI REST API.
+
+<img src="Images\ReadMe\media\image26.png" style="width:4.23926in;height:2.38382in" />
 
 ### Update application settings in the appsettings.json file
 
-Ssss
+Before you can run the application in the Visual Studio debugger, you
+must update several critical application settings in the
+**appsettings.json** file. Open the **appsettings.json** file and
+examine the JSON content inside. There is three important sections named
+**AzureAd**, **TenantManagementDB** and **DemoSettings**.
 
-<img src="Images\ReadMe\media\image25.png" style="width:6.5in;height:1.96667in" />
+<img src="Images\ReadMe\media\image27.png" style="width:6.5in;height:1.96667in" />
 
-Xxx
+Inside the **AzureAd** section, update the **TenantId**, **ClientId**
+and **ClientSecret** with the data you collected when creating the Azure
+AD application named **Power BI Tenant Management Application.**
 
-<img src="Images\ReadMe\media\image26.png" style="width:5.27639in;height:2.00625in" />
+<img src="Images\ReadMe\media\image28.png" style="width:5.27639in;height:2.00625in" />
 
-This is the database connection string.
+If you are using Visual Studio 2019, you can leave the database
+connection string the way it is with the **Server** setting of
+**(localdb)\\\\MSSQLLocalDB**. You can change this connection string to
+point to a different server if you'd rather create the project database
+named **TenantManagementDB** in a different location.
 
-"Server=(localdb)\\\\MSSQLLocalDB;Database=TenantManagementDB;Integrated
-Security=True"
+<img src="Images\ReadMe\media\image29.png" style="width:6.49722in;height:0.84028in" />
 
-X
+In the **DemoSettings** section there is a property named **AdminUser**.
+The reason that this property exists has to with you being able to see
+Power BI workspaces as they are created by service principals. Update
+the **AdminUser** property setting with your Azure AD account name so
+that you will be added as an Admin member to any Power BI workspaces
+created by this application.
 
-<img src="Images\ReadMe\media\image27.png" style="width:5.24514in;height:1.70556in" />
+<img src="Images\ReadMe\media\image30.png" style="width:5.24514in;height:1.70556in" />
 
-x
+### Create the **TenantManagementDB** database
 
-### Create the TenantManagementDB database
+Before you can run the application in Visual Studio, you must create the
+project database named **TenantManagementDB**. This database schema has
+been created using the .NET 5 version of the Entity Framework. Creating
+the database will require you to run two PowerShell commands in Visual
+Studio.
 
-Xxxx
+Before creating the **TenantManagementDB** database, take a moment to
+understand how it’s been structured. Start by opening the file named
+**TenantManagementDB.cs** in the **Models** folder. Note that you
+shouldn't make any change to **TenantManagementDB.cs**. You are just
+going to inspect the file you understand how the **TenantManagementDB**
+database is generated.
 
-<img src="Images\ReadMe\media\image28.png" style="width:6.49097in;height:3.14722in" />
+When you inspect the code inside **TenantManagementDB.cs**, you will see
+a class named **TenantManagementDB** that derives from **DbContext** to
+add support for automatic database generation using Entity Framework.
+The **TenantManagementDB** class serves as the top-level class for the
+Entity Framework which contains two **DBSet** properties named
+**AppIdentites** and **Tenants**. When you generate the database, each
+of these **DBSet** properties will be created as database tables.
 
-X
+<img src="Images\ReadMe\media\image31.png" style="width:6.49097in;height:3.14722in" />
 
-<img src="Images\ReadMe\media\image29.png" style="width:4.05521in;height:1.24168in" />
+The **AppIdentites** table is generated using the table schema defined
+by the **PowerBiAppIdentity** class.
 
-Z
+<img src="Images\ReadMe\media\image32.png" style="width:5.02431in;height:2.29444in" />
 
-<img src="Images\ReadMe\media\image30.png" style="width:3.34969in;height:1.61769in" />
+The **Tenants** table is generated using the table schema defined by the
+**PowerBiTenant** class.
 
-Zz
+<img src="Images\ReadMe\media\image33.png" style="width:4.53403in;height:2.47222in" />
+
+After you have inspected the code used to generated the database, close
+the source file named **TenantManagementDB.cs** without saving any
+changes. The next step is to run the PowerShell commands to create the
+project database named **TenantManagementDB**. Open the Package Manager
+console by invoking the **Tools &gt; NuGet Package Manager &gt; Package
+Manager Console** command.
+
+<img src="Images\ReadMe\media\image34.png" style="width:4.05521in;height:1.24168in" />
+
+You should now see the command prompt for the **Package Manager
+Console** where you can type and execute PowerShell commands.
+
+<img src="Images\ReadMe\media\image35.png" style="width:3.34969in;height:1.61769in" />
+
+Type and execute the following **Add-Migration** command to create a new
+Entity Framework migration in the project.
 
 Add-Migration InitialCreate
 
-xxx
+The **Add-Migration** command should run without errors. If it fails you
+might have to modify the database connection string in
+**appsettings.json**.
 
-<img src="Images\ReadMe\media\image31.png" style="width:6.49722in;height:1.44792in" />
+<img src="Images\ReadMe\media\image36.png" style="width:6.49722in;height:1.44792in" />
 
-Ssss
+After running the Add-Migration command, you will see a new folder has
+been added to the project named **Migrations** with several C\# source
+files. There is no need to change anything in thee source files but you
+can inspect what's inside them if you are curious how the Entity
+Framework does its work.
 
-<img src="Images\ReadMe\media\image32.png" style="width:4.65in;height:2.53958in" />
+<img src="Images\ReadMe\media\image37.png" style="width:4.65in;height:2.53958in" />
 
-Ss
+Return to the **Package Manager Console** and run the following
+**Update-Database** command to generate the database named
+**TenantManagementDB**.
 
 Update-Database
 
-Xx
+The **Update-Database** command should run without errors and generate
+the database named **TenantManagementDB**.
 
-<img src="Images\ReadMe\media\image33.png" style="width:4.72393in;height:1.38428in" />
+<img src="Images\ReadMe\media\image38.png" style="width:4.72393in;height:1.38428in" />
 
-Xxx
+In Visual Studio, you can use the **SQL Server Object Explorer** to see
+the database that has just been created. Open the **SQL Server Object
+Explorer** by invoking the **View &gt;** **SQL Server Object Explorer**
+menu command.
 
-<img src="Images\ReadMe\media\image34.png" style="width:3.1411in;height:1.66017in" />
+<img src="Images\ReadMe\media\image39.png" style="width:3.1411in;height:1.66017in" />
 
-Xxx
+Expand the **Databases** node for the server you are using and verify
+you an see the new database named **TenantManagementDB**.
 
-<img src="Images\ReadMe\media\image35.png" style="width:4.78542in;height:2.20833in" />
+<img src="Images\ReadMe\media\image40.png" style="width:4.78542in;height:2.20833in" />
 
-Xx
+If you expand the **Tables** node for **TenantManagementDB**, you should
+see the two tables named **AppIdentities** and **Tenants**.
 
-<img src="Images\ReadMe\media\image36.png" style="width:2.73611in;height:1.675in" />
+<img src="Images\ReadMe\media\image41.png" style="width:2.73611in;height:1.675in" />
 
-xxx
+The **TenantManagementDB** database has now been set up and you are
+ready to run the application in the Visual Studio debugger.
 
 ## Test the Tenant Management Application
 
-Xxxx
+Launch the **TenantManagement** web application in the Visual Studio
+debugger by pressing the **{F5}** key or clicking the Visual Studio
+**Play** button with the green arrow and the caption of **IIS Express**.
 
-<img src="Images\ReadMe\media\image37.png" style="width:6.49722in;height:2.25764in" />
+<img src="Images\ReadMe\media\image42.png" style="width:6.49097in;height:1.61319in" />
 
-<img src="Images\ReadMe\media\image38.png" style="width:3.79722in;height:5.325in" />
+When the application starts, click the **Sign in** link in the upper
+right corner to begin the user login sequence.
+
+<img src="Images\ReadMe\media\image43.png" style="width:6.49722in;height:2.25764in" />
+
+The first time you authenticate with Azure AD, you'll be prompted with
+the following dialog asking you to accept the delegated permission
+request that the application has made for the Microsoft Graph API. Click
+the **Accept** button to grant these permissions and continue.
+
+<img src="Images\ReadMe\media\image44.png" style="width:2.44552in;height:3.42945in" />
+
+Once you have logged in, you should see your name in the welcome
+message.
+
+<img src="Images\ReadMe\media\image45.png" style="width:4.77914in;height:1.96493in" />
+
+### Create App Identities
+
+Now, you should start by creating a few new App Identities. Click the
+**App Identities** link to navigate to the **App Identities** page.
+
+<img src="Images\ReadMe\media\image46.png" style="width:5.06748in;height:1.31562in" />
+
+Click the **Add New App Identity to Pool** button to display the
+**Create New App Identity** page.
+
+<img src="Images\ReadMe\media\image47.png" style="width:5.44785in;height:1.13305in" />
+
+The **Create New App Identity** page will automatically populate the
+textbox with the name with a value of **ServicePrincipal01**. Click the
+**Add New App Identity to Pool** button to create the new app identity.
+
+<img src="Images\ReadMe\media\image48.png" style="width:6.49722in;height:2.58889in" />
+
+After a few second, you should see a new row in table on the **App
+Identities** page with **ServicePrinicpal01**.
+
+<img src="Images\ReadMe\media\image49.png" style="width:5.5092in;height:1.32666in" />
+
+Follow the same steps to create two more app identities named
+**ServicePrincipal02** and **ServicePrincipal03**. When you're done, the
+**App Identities** page should match the following screenshot.
+
+<img src="Images\ReadMe\media\image50.png" style="width:5.16564in;height:1.83591in" />
+
+Note that behind the scenes the **TenantManagement** application is
+using the Microsoft Graph API to create new Azure AD application each
+time you create a new app identity. If you return pack to the [App
+registration
+page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
+in the Azure portal you will see that an Azure AD application has been
+created for each app identity you've created.
+
+<img src="Images\ReadMe\media\image51.png" style="width:5.14724in;height:2.04799in" />
+
+If you return to the
+[Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)
+page in the Azure portal and drill into the Members page of the **Power
+BI Apps** security group, you will see that the **TenantManagement**
+application has also added the service principal for each azure AD
+application as a group member. This is important because these service
+principals must be added to this group in order to call the Power BI
+REST API.
+
+<img src="Images\ReadMe\media\image52.png" style="width:6.49722in;height:3.17153in" />
+
+In addition to communicating with Azure AD to create and configure Azure
+AD application, the **TenantManagement** application also captures
+metadata and authentication credentials and stores them in the
+**TenantManagementDB** database. The **TenantManagement** application is
+able to retrieve these credentials and authenticate with Azure AD under
+the identity of any of these Azure AD applications.
+
+<img src="Images\ReadMe\media\image53.png" style="width:6.27607in;height:0.90693in" />
+
+**CAVEAT**: Keep in mind that the **TenantManagement** application has
+been designed as a proof-of-concept (POC) application to teach concepts
+and provide a starting point for other developers. This application does
+not include certain aspects that are important to include in a
+real-world applications such as hiding secrets. If you plan to extend
+this POC sample application into a production application, it will be
+your responsibility to add support for hiding credentials such as the
+Client Secret. You can consider an approach such as using the [Always
+Encrypted](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver15)
+feature in Azure SQL or extending the **TenantManagement** application
+to store client secrets or client certificates in [Azure Key
+Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts).
+
+### Create New Tenants
+
+Return to the **TenantManagement** application and navigate to the
+**Tenants** page.
+
+<img src="Images\ReadMe\media\image54.png" style="width:6.49097in;height:1.47222in" />
+
+Click the **Onboard New Tenant** button to display the **Onboard New
+Tenant** page.
+
+<img src="Images\ReadMe\media\image55.png" style="width:4.08589in;height:1.32058in" />
+
+You can create the first tenant using the default values supplied by the
+Onboard New Tenant page. Click to **Create New Tenant** button to begin
+the process of creating a new customer tenant.
+
+<img src="Images\ReadMe\media\image56.png" style="width:4.48466in;height:2.24209in" />
+
+After a few seconds, you should see the next tenant has been created.
+
+<img src="Images\ReadMe\media\image57.png" style="width:5.54601in;height:1.06387in" />
+
+Click the **Onboard New Tenant** button again to create a second tenant.
+
+<img src="Images\ReadMe\media\image58.png" style="width:5.54583in;height:1.04841in" />
+
+When creating the second customer tenant, select a different database
+than the default selection and then click the **Create New Tenant**
+button.
+
+<img src="Images\ReadMe\media\image59.png" style="width:5.0184in;height:2.30062in" />
+
+You should now have two customer tenants. Note they each tenant has a
+different app identity as its **Owner**.
+
+<img src="Images\ReadMe\media\image60.png" style="width:5.15337in;height:1.22232in" />
+
+Follow the same steps to create two more customer tenants so that there
+are 3 app identities and 4 customer tenants. Once you have created more
+tenants then app identities, you should see app identity pooling where
+multiple customer tenants share the same app identity.
+
+<img src="Images\ReadMe\media\image61.png" style="width:6.49097in;height:2.21458in" />
+
+As you create a new customer tenant, the **TenantManagement**
+application uses the Power BI REST API to implement the onboarding
+logic.
+
+1.  Create a new Power BI workspace
+
+2.  Upload a template PBIX file to create **Sales** dataset and
+    **Sales** report
+
+3.  Update dataset parameters on **Sales** dataset to point to this
+    customer's database
+
+4.  Patch credentials for the SQL datasource used by the **Sales**
+    dataset
+
+5.  Start a refresh operation on the **Sales** database
+
+The **TenantManagement** application also create a new record in the
+**Tenants** table of the **TenantManagementDB** database. Note that the
+application identity associated with this customer tenant is tracked in
+the **Owner** column.
+
+<img src="Images\ReadMe\media\image62.png" style="width:6.49097in;height:0.63194in" />
+
+You can click on the **View** button for a specific tenant on the
+**Power BI Tenant** page to drill into the **Tenant Details** page.
+
+<img src="Images\ReadMe\media\image63.png" style="width:6.49097in;height:1.57639in" />
+
+The bottom of the **Tenant Details** page also shows details of the
+underlying Power BI workspace including its members, datasets and
+reports.
+
+<img src="Images\ReadMe\media\image64.png" style="width:5.82209in;height:3.45575in" />
+
+Click on the back arrow to return to the Power BI Tenants page.
+
+<img src="Images\ReadMe\media\image65.png" style="width:5.31902in;height:1.63732in" />
+
+### Embed Reports
+
+Now it's time to make use of the **TenantManagement** application's
+ability to embed reports. Click on the **Embed** button for the first
+customer tenant.
+
+<img src="Images\ReadMe\media\image66.png" style="width:6.49097in;height:2.22708in" />
+
+You should see a page with an embedded report for that tenant. When you
+click on this button to embed a report, the **TenanantManagement**
+application retrieves credentials for the app identity associated with
+the customer tenant and uses Client Credentials Flow to acquire an
+app-only access token from Azure AD. That access token is then used to
+communicate with the Power BI Service to retrieve report metadata and
+generate an embed token for the embedding process.
+
+<img src="Images\ReadMe\media\image67.png" style="width:6.49722in;height:4.07361in" />
+
+Click on the back arrow button to return to the **Tenants** page.
+
+<img src="Images\ReadMe\media\image68.png" style="width:6.49722in;height:2.48472in" />
+
+Now test clicking the **Embed** button for other customer tenants. As
+you can see, the **TenantManagement** application has the ability to
+generate access tokens for any of the Azure applications that it has
+created.
+
+<img src="Images\ReadMe\media\image69.png" style="width:6.49722in;height:2.25139in" />
+
+Inspect the Power BI Workspaces
+
+If you're curious about what's been created in Power BI, you should be
+able to go to the Power BI Service and examine the workspaces. Navigate
+to the Power BI Service portal at <https://app.powerbi.com> and examine
+the workspaces that have been created.
+
+<img src="Images\ReadMe\media\image70.png" style="width:3.10459in;height:3.34969in" />
+
+Navigate to one of these workspaces such as **Tenant01**.
+
+<img src="Images\ReadMe\media\image71.png" style="width:6.49097in;height:2.46042in" />
+
+Drill into the Setting page of the dataset named **Sales**.
+
+<img src="Images\ReadMe\media\image72.png" style="width:4.03067in;height:2.07436in" />
+
+You should be able to verify that the dataset has been configured by one
+of the Azure AD application created by the **TenantManagement**
+application.
+
+<img src="Images\ReadMe\media\image73.png" style="width:6.49097in;height:1.88958in" />
+
+This concludes the walkthrough of the **TenantManagement** application.
