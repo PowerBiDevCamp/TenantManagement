@@ -137,11 +137,9 @@ settings.
 
 ### Create the Azure AD Application for the **TenantManagement** Application
 
-When you login to the Azure portal to create the new Azure AD
-application, make sure you log in using a user account in the same
-tenant which contains the Power BI reports you'd like to embed. Begin by
-navigating to the [App
-registration](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
+Login to the Azure portal to create the new Azure AD application. 
+Begin by navigating to the 
+[App registration](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
 page in the Azure portal and click the **New registration** link.
 
 <img src="Images\ReadMe\media\image12.png" width=800 />
